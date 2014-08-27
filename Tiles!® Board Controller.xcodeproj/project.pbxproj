@@ -1,0 +1,573 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = A433CF6119A2D9F5008C0BA2 /* Device.m */; };
+		A433CF6519A2DA10008C0BA2 /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = A433CF6419A2DA10008C0BA2 /* Bluetooth.m */; };
+		A4499A7719A370DE003B4904 /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = A4499A7619A370DE003B4904 /* Colour.m */; };
+		A475F1BB19A454D1002D3667 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BA19A454D1002D3667 /* Controller.m */; };
+		A475F1CA19A45F0E002D3667 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BD19A45F0E002D3667 /* Board.m */; };
+		A475F1CB19A45F0E002D3667 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BF19A45F0E002D3667 /* Game.m */; };
+		A475F1CC19A45F0E002D3667 /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C119A45F0E002D3667 /* Piece.m */; };
+		A475F1CE19A45F0E002D3667 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C519A45F0E002D3667 /* Player.m */; };
+		A475F1D019A45F0E002D3667 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C919A45F0E002D3667 /* Tile.m */; };
+		A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A475F1D219A45F77002D3667 /* Storyboard.storyboard */; };
+		A4AA69AE19A1B07000D88199 /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA69AD19A1B07000D88199 /* Touch.m */; };
+		A4D233071991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
+		A4D233091991E2840048E49B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233081991E2840048E49B /* CoreGraphics.framework */; };
+		A4D2330B1991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
+		A4D233111991E2840048E49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D2330F1991E2840048E49B /* InfoPlist.strings */; };
+		A4D233131991E2840048E49B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D233121991E2840048E49B /* main.m */; };
+		A4D233171991E2840048E49B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D233161991E2840048E49B /* AppDelegate.m */; };
+		A4D233191991E2840048E49B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D233181991E2840048E49B /* Images.xcassets */; };
+		A4D233201991E2840048E49B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2331F1991E2840048E49B /* XCTest.framework */; };
+		A4D233211991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
+		A4D233221991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
+		A4D2332A1991E2840048E49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D233281991E2840048E49B /* InfoPlist.strings */; };
+		A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A4D233231991E2840048E49B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A4D232FB1991E2830048E49B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = A4D233021991E2830048E49B;
+			remoteInfo = "Tiles!® Board Controller";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		A433CF6019A2D9F5008C0BA2 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		A433CF6119A2D9F5008C0BA2 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		A433CF6319A2DA10008C0BA2 /* Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
+		A433CF6419A2DA10008C0BA2 /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
+		A4499A7519A370DE003B4904 /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		A4499A7619A370DE003B4904 /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		A475F1B919A454D1002D3667 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		A475F1BA19A454D1002D3667 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		A475F1BC19A45F0E002D3667 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		A475F1BD19A45F0E002D3667 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		A475F1BE19A45F0E002D3667 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		A475F1BF19A45F0E002D3667 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		A475F1C019A45F0E002D3667 /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
+		A475F1C119A45F0E002D3667 /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
+		A475F1C419A45F0E002D3667 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		A475F1C519A45F0E002D3667 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		A475F1C819A45F0E002D3667 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		A475F1C919A45F0E002D3667 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		A475F1D219A45F77002D3667 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A4AA69AC19A1B07000D88199 /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
+		A4AA69AD19A1B07000D88199 /* Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
+		A4D233031991E2840048E49B /* Tiles!® Board Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiles!® Board Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D233061991E2840048E49B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		A4D233081991E2840048E49B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		A4D2330A1991E2840048E49B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		A4D2330E1991E2840048E49B /* Tiles!® Board Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board Controller-Info.plist"; sourceTree = "<group>"; };
+		A4D233101991E2840048E49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4D233121991E2840048E49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A4D233141991E2840048E49B /* Tiles!® Board Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiles!® Board Controller-Prefix.pch"; sourceTree = "<group>"; };
+		A4D233151991E2840048E49B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A4D233161991E2840048E49B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A4D233181991E2840048E49B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiles!® Board ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4D2331F1991E2840048E49B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		A4D233271991E2840048E49B /* Tiles!® Board ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board ControllerTests-Info.plist"; sourceTree = "<group>"; };
+		A4D233291991E2840048E49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A4D233001991E2830048E49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D233091991E2840048E49B /* CoreGraphics.framework in Frameworks */,
+				A4D2330B1991E2840048E49B /* UIKit.framework in Frameworks */,
+				A4D233071991E2840048E49B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D2331B1991E2840048E49B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D233201991E2840048E49B /* XCTest.framework in Frameworks */,
+				A4D233221991E2840048E49B /* UIKit.framework in Frameworks */,
+				A4D233211991E2840048E49B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A433CF5D19A2D940008C0BA2 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A433CF6019A2D9F5008C0BA2 /* Device.h */,
+				A433CF6119A2D9F5008C0BA2 /* Device.m */,
+				A433CF6319A2DA10008C0BA2 /* Bluetooth.h */,
+				A433CF6419A2DA10008C0BA2 /* Bluetooth.m */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
+		A433CF5E19A2D949008C0BA2 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				A475F1D219A45F77002D3667 /* Storyboard.storyboard */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		A433CF5F19A2D94F008C0BA2 /* API  */ = {
+			isa = PBXGroup;
+			children = (
+				A4AA69AC19A1B07000D88199 /* Touch.h */,
+				A4AA69AD19A1B07000D88199 /* Touch.m */,
+				A4499A7519A370DE003B4904 /* Colour.h */,
+				A4499A7619A370DE003B4904 /* Colour.m */,
+				A475F1B919A454D1002D3667 /* Controller.h */,
+				A475F1BA19A454D1002D3667 /* Controller.m */,
+			);
+			name = "API ";
+			sourceTree = "<group>";
+		};
+		A475F1D119A45F17002D3667 /* ADT */ = {
+			isa = PBXGroup;
+			children = (
+				A475F1BE19A45F0E002D3667 /* Game.h */,
+				A475F1BF19A45F0E002D3667 /* Game.m */,
+				A4C8714D19AC16DE0008A603 /* Board & Tile */,
+				A4C8714E19AC16F10008A603 /* Pieces & Player */,
+			);
+			name = ADT;
+			sourceTree = "<group>";
+		};
+		A4C8714D19AC16DE0008A603 /* Board & Tile */ = {
+			isa = PBXGroup;
+			children = (
+				A475F1C819A45F0E002D3667 /* Tile.h */,
+				A475F1C919A45F0E002D3667 /* Tile.m */,
+				A475F1BC19A45F0E002D3667 /* Board.h */,
+				A475F1BD19A45F0E002D3667 /* Board.m */,
+			);
+			name = "Board & Tile";
+			sourceTree = "<group>";
+		};
+		A4C8714E19AC16F10008A603 /* Pieces & Player */ = {
+			isa = PBXGroup;
+			children = (
+				A475F1C019A45F0E002D3667 /* Piece.h */,
+				A475F1C119A45F0E002D3667 /* Piece.m */,
+				A475F1C419A45F0E002D3667 /* Player.h */,
+				A475F1C519A45F0E002D3667 /* Player.m */,
+			);
+			name = "Pieces & Player";
+			sourceTree = "<group>";
+		};
+		A4D232FA1991E2830048E49B = {
+			isa = PBXGroup;
+			children = (
+				A4D2330C1991E2840048E49B /* Tiles!® Board Controller */,
+				A4D233251991E2840048E49B /* Tiles!® Board ControllerTests */,
+				A4D233051991E2840048E49B /* Frameworks */,
+				A4D233041991E2840048E49B /* Products */,
+				A4D2330D1991E2840048E49B /* Supporting Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A4D233041991E2840048E49B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A4D233031991E2840048E49B /* Tiles!® Board Controller.app */,
+				A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A4D233051991E2840048E49B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A4D233061991E2840048E49B /* Foundation.framework */,
+				A4D233081991E2840048E49B /* CoreGraphics.framework */,
+				A4D2330A1991E2840048E49B /* UIKit.framework */,
+				A4D2331F1991E2840048E49B /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A4D2330C1991E2840048E49B /* Tiles!® Board Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A475F1D119A45F17002D3667 /* ADT */,
+				A433CF5F19A2D94F008C0BA2 /* API  */,
+				A433CF5E19A2D949008C0BA2 /* UI */,
+				A433CF5D19A2D940008C0BA2 /* Bluetooth */,
+			);
+			path = "Tiles!® Board Controller";
+			sourceTree = "<group>";
+		};
+		A4D2330D1991E2840048E49B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D233151991E2840048E49B /* AppDelegate.h */,
+				A4D233161991E2840048E49B /* AppDelegate.m */,
+				A4D233181991E2840048E49B /* Images.xcassets */,
+				A4D2330E1991E2840048E49B /* Tiles!® Board Controller-Info.plist */,
+				A4D2330F1991E2840048E49B /* InfoPlist.strings */,
+				A4D233121991E2840048E49B /* main.m */,
+				A4D233141991E2840048E49B /* Tiles!® Board Controller-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			path = "Tiles!® Board Controller";
+			sourceTree = "<group>";
+		};
+		A4D233251991E2840048E49B /* Tiles!® Board ControllerTests */ = {
+			isa = PBXGroup;
+			children = (
+				A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */,
+				A4D233261991E2840048E49B /* Supporting Files */,
+			);
+			path = "Tiles!® Board ControllerTests";
+			sourceTree = "<group>";
+		};
+		A4D233261991E2840048E49B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				A4D233271991E2840048E49B /* Tiles!® Board ControllerTests-Info.plist */,
+				A4D233281991E2840048E49B /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A4D233021991E2830048E49B /* Tiles!® Board Controller */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D2332F1991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board Controller" */;
+			buildPhases = (
+				A4D232FF1991E2830048E49B /* Sources */,
+				A4D233001991E2830048E49B /* Frameworks */,
+				A4D233011991E2830048E49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tiles!® Board Controller";
+			productName = "Tiles!® Board Controller";
+			productReference = A4D233031991E2840048E49B /* Tiles!® Board Controller.app */;
+			productType = "com.apple.product-type.application";
+		};
+		A4D2331D1991E2840048E49B /* Tiles!® Board ControllerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A4D233321991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */;
+			buildPhases = (
+				A4D2331A1991E2840048E49B /* Sources */,
+				A4D2331B1991E2840048E49B /* Frameworks */,
+				A4D2331C1991E2840048E49B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A4D233241991E2840048E49B /* PBXTargetDependency */,
+			);
+			name = "Tiles!® Board ControllerTests";
+			productName = "Tiles!® Board ControllerTests";
+			productReference = A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A4D232FB1991E2830048E49B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Matthew Overington";
+				TargetAttributes = {
+					A4D2331D1991E2840048E49B = {
+						TestTargetID = A4D233021991E2830048E49B;
+					};
+				};
+			};
+			buildConfigurationList = A4D232FE1991E2830048E49B /* Build configuration list for PBXProject "Tiles!® Board Controller" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = A4D232FA1991E2830048E49B;
+			productRefGroup = A4D233041991E2840048E49B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A4D233021991E2830048E49B /* Tiles!® Board Controller */,
+				A4D2331D1991E2840048E49B /* Tiles!® Board ControllerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A4D233011991E2830048E49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D233111991E2840048E49B /* InfoPlist.strings in Resources */,
+				A4D233191991E2840048E49B /* Images.xcassets in Resources */,
+				A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D2331C1991E2840048E49B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D2332A1991E2840048E49B /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A4D232FF1991E2830048E49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A475F1CB19A45F0E002D3667 /* Game.m in Sources */,
+				A433CF6519A2DA10008C0BA2 /* Bluetooth.m in Sources */,
+				A475F1CC19A45F0E002D3667 /* Piece.m in Sources */,
+				A475F1CE19A45F0E002D3667 /* Player.m in Sources */,
+				A475F1D019A45F0E002D3667 /* Tile.m in Sources */,
+				A4D233171991E2840048E49B /* AppDelegate.m in Sources */,
+				A475F1CA19A45F0E002D3667 /* Board.m in Sources */,
+				A4AA69AE19A1B07000D88199 /* Touch.m in Sources */,
+				A4D233131991E2840048E49B /* main.m in Sources */,
+				A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */,
+				A475F1BB19A454D1002D3667 /* Controller.m in Sources */,
+				A4499A7719A370DE003B4904 /* Colour.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A4D2331A1991E2840048E49B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A4D233241991E2840048E49B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = A4D233021991E2830048E49B /* Tiles!® Board Controller */;
+			targetProxy = A4D233231991E2840048E49B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		A4D2330F1991E2840048E49B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D233101991E2840048E49B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		A4D233281991E2840048E49B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A4D233291991E2840048E49B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A4D2332D1991E2840048E49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A4D2332E1991E2840048E49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A4D233301991E2840048E49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiles!® Board Controller/Tiles!® Board Controller-Prefix.pch";
+				INFOPLIST_FILE = "Tiles!® Board Controller/Tiles!® Board Controller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		A4D233311991E2840048E49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiles!® Board Controller/Tiles!® Board Controller-Prefix.pch";
+				INFOPLIST_FILE = "Tiles!® Board Controller/Tiles!® Board Controller-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		A4D233331991E2840048E49B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiles!® Board Controller.app/Tiles!® Board Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiles!® Board Controller/Tiles!® Board Controller-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Tiles!® Board ControllerTests/Tiles!® Board ControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		A4D233341991E2840048E49B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Tiles!® Board Controller.app/Tiles!® Board Controller";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Tiles!® Board Controller/Tiles!® Board Controller-Prefix.pch";
+				INFOPLIST_FILE = "Tiles!® Board ControllerTests/Tiles!® Board ControllerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A4D232FE1991E2830048E49B /* Build configuration list for PBXProject "Tiles!® Board Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D2332D1991E2840048E49B /* Debug */,
+				A4D2332E1991E2840048E49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D2332F1991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board Controller" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D233301991E2840048E49B /* Debug */,
+				A4D233311991E2840048E49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A4D233321991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A4D233331991E2840048E49B /* Debug */,
+				A4D233341991E2840048E49B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A4D232FB1991E2830048E49B /* Project object */;
+}
