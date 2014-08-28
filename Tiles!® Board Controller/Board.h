@@ -18,7 +18,7 @@
 @property (readonly) NSMutableArray* allTiles;
 
 -(id)initWithWidth:(NSInteger)width height:(NSInteger)height;
--(Tile*)tileWithX:(CGFloat)x Y:(CGFloat)y;
+-(Tile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
 
 -(void) moveContentsOfTile:(Tile*)firstTile toTile:(Tile*)secondTile;
 -(void) deleteContentsOfTile:(Tile*)tile;
