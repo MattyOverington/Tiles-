@@ -57,4 +57,37 @@
     [tile replaceContentsWith:piece];
 }
 
+- (void)changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c{
+    Tile* t = [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
+    [t setTileColour: c];
+}
+
+- (void)changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger)y2 toColour:(Colour *)c {
+    
+    assert(x2 > x1);
+    assert(y2 > y1);
+    
+    assert(x1 > -1);
+    assert(x2 < [self.allGridSquares count] - 1);
+    
+    assert(x1 > -1);
+    assert(x2 < [self.allGridSquares count] - 1);
+    
+    NSMutableArray* tilesToChange = [[NSMutableArray alloc] init];
+    for (NSInteger i = 0; i < y2 - y1; i++) {
+        NSRange range;
+        range.length = x2-x1;
+        range.location = x1;
+        
+        NSIndexSet* i = [[NSIndexSet alloc] initWithIndexesInRange:range];
+        [tilesToChange addObject:[self.allGridSquares objectsAtIndexes:i]];
+    }
+    
+    for (Tile* t in tilesToChange) {
+        [t setTileColour:c];
+    }
+    
+   
+}
+
 @end
