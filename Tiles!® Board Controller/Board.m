@@ -86,8 +86,14 @@
     for (Tile* t in tilesToChange) {
         [t setTileColour:c];
     }
-    
-   
+}
+
+- (void)changeColorOfAllTiles:(Colour *)colour {
+    for (NSMutableArray* m in self.allGridSquares) {
+        for (Tile* t in m) {
+            [t setTileColour:colour];
+        }
+    }
 }
 
 @end

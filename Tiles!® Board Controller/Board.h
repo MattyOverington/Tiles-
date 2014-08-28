@@ -19,10 +19,13 @@
 
 -(id)initWithWidth:(NSInteger)width height:(NSInteger)height;
 -(Tile*)tileWithX:(CGFloat)x Y:(CGFloat)y;
+
 -(void) moveContentsOfTile:(Tile*)firstTile toTile:(Tile*)secondTile;
 -(void) deleteContentsOfTile:(Tile*)tile;
 -(void) assignContentsOfTile:(Tile*)tile withContents:(Piece*) piece;
+
 -(void) changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c;
 -(void) changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger) y2 toColour:(Colour*) c;
+-(void) changeColorOfAllTiles:(Colour*) colour;
 
 @end
