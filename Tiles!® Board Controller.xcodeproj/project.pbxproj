@@ -10,6 +10,7 @@
 		A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = A433CF6119A2D9F5008C0BA2 /* Device.m */; };
 		A433CF6519A2DA10008C0BA2 /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = A433CF6419A2DA10008C0BA2 /* Bluetooth.m */; };
 		A4499A7719A370DE003B4904 /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = A4499A7619A370DE003B4904 /* Colour.m */; };
+		A464152C19AF3DBC00256047 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A464152B19AF3DBC00256047 /* InfoPlist.strings */; };
 		A475F1BB19A454D1002D3667 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BA19A454D1002D3667 /* Controller.m */; };
 		A475F1CA19A45F0E002D3667 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BD19A45F0E002D3667 /* Board.m */; };
 		A475F1CB19A45F0E002D3667 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BF19A45F0E002D3667 /* Game.m */; };
@@ -21,7 +22,6 @@
 		A4D233071991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
 		A4D233091991E2840048E49B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233081991E2840048E49B /* CoreGraphics.framework */; };
 		A4D2330B1991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
-		A4D233111991E2840048E49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D2330F1991E2840048E49B /* InfoPlist.strings */; };
 		A4D233131991E2840048E49B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D233121991E2840048E49B /* main.m */; };
 		A4D233171991E2840048E49B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D233161991E2840048E49B /* AppDelegate.m */; };
 		A4D233191991E2840048E49B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D233181991E2840048E49B /* Images.xcassets */; };
@@ -49,6 +49,7 @@
 		A433CF6419A2DA10008C0BA2 /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
 		A4499A7519A370DE003B4904 /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
 		A4499A7619A370DE003B4904 /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		A464152B19AF3DBC00256047 /* InfoPlist.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = InfoPlist.strings; path = ../../../../InfoPlist.strings; sourceTree = "<group>"; };
 		A475F1B919A454D1002D3667 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
 		A475F1BA19A454D1002D3667 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
 		A475F1BC19A45F0E002D3667 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
@@ -69,7 +70,6 @@
 		A4D233081991E2840048E49B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		A4D2330A1991E2840048E49B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		A4D2330E1991E2840048E49B /* Tiles!® Board Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board Controller-Info.plist"; sourceTree = "<group>"; };
-		A4D233101991E2840048E49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4D233121991E2840048E49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		A4D233141991E2840048E49B /* Tiles!® Board Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiles!® Board Controller-Prefix.pch"; sourceTree = "<group>"; };
 		A4D233151991E2840048E49B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -216,11 +216,11 @@
 		A4D2330D1991E2840048E49B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				A464152B19AF3DBC00256047 /* InfoPlist.strings */,
 				A4D233151991E2840048E49B /* AppDelegate.h */,
 				A4D233161991E2840048E49B /* AppDelegate.m */,
 				A4D233181991E2840048E49B /* Images.xcassets */,
 				A4D2330E1991E2840048E49B /* Tiles!® Board Controller-Info.plist */,
-				A4D2330F1991E2840048E49B /* InfoPlist.strings */,
 				A4D233121991E2840048E49B /* main.m */,
 				A4D233141991E2840048E49B /* Tiles!® Board Controller-Prefix.pch */,
 			);
@@ -321,8 +321,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D233111991E2840048E49B /* InfoPlist.strings in Resources */,
 				A4D233191991E2840048E49B /* Images.xcassets in Resources */,
+				A464152C19AF3DBC00256047 /* InfoPlist.strings in Resources */,
 				A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,14 +376,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A4D2330F1991E2840048E49B /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A4D233101991E2840048E49B /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		A4D233281991E2840048E49B /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
