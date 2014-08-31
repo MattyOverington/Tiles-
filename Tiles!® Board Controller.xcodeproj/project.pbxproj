@@ -18,6 +18,9 @@
 		A475F1CE19A45F0E002D3667 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C519A45F0E002D3667 /* Player.m */; };
 		A475F1D019A45F0E002D3667 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C919A45F0E002D3667 /* Tile.m */; };
 		A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A475F1D219A45F77002D3667 /* Storyboard.storyboard */; };
+		A4990C3D19B2E2C100A06BB7 /* GameMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4990C3C19B2E2C100A06BB7 /* GameMenuViewController.m */; };
+		A4990C4019B2E2DE00A06BB7 /* GameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4990C3F19B2E2DE00A06BB7 /* GameSetupViewController.m */; };
+		A4990C4319B2E2FB00A06BB7 /* GlobalSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4990C4219B2E2FB00A06BB7 /* GlobalSettingsViewController.m */; };
 		A4AA69AE19A1B07000D88199 /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA69AD19A1B07000D88199 /* Touch.m */; };
 		A4D233071991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
 		A4D233091991E2840048E49B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233081991E2840048E49B /* CoreGraphics.framework */; };
@@ -63,6 +66,12 @@
 		A475F1C819A45F0E002D3667 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
 		A475F1C919A45F0E002D3667 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
 		A475F1D219A45F77002D3667 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
+		A4990C3B19B2E2C100A06BB7 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
+		A4990C3C19B2E2C100A06BB7 /* GameMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMenuViewController.m; sourceTree = "<group>"; };
+		A4990C3E19B2E2DE00A06BB7 /* GameSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetupViewController.h; sourceTree = "<group>"; };
+		A4990C3F19B2E2DE00A06BB7 /* GameSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSetupViewController.m; sourceTree = "<group>"; };
+		A4990C4119B2E2FB00A06BB7 /* GlobalSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSettingsViewController.h; sourceTree = "<group>"; };
+		A4990C4219B2E2FB00A06BB7 /* GlobalSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSettingsViewController.m; sourceTree = "<group>"; };
 		A4AA69AC19A1B07000D88199 /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
 		A4AA69AD19A1B07000D88199 /* Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
 		A4D233031991E2840048E49B /* Tiles!® Board Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiles!® Board Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,6 +130,12 @@
 			isa = PBXGroup;
 			children = (
 				A475F1D219A45F77002D3667 /* Storyboard.storyboard */,
+				A4990C3B19B2E2C100A06BB7 /* GameMenuViewController.h */,
+				A4990C3C19B2E2C100A06BB7 /* GameMenuViewController.m */,
+				A4990C3E19B2E2DE00A06BB7 /* GameSetupViewController.h */,
+				A4990C3F19B2E2DE00A06BB7 /* GameSetupViewController.m */,
+				A4990C4119B2E2FB00A06BB7 /* GlobalSettingsViewController.h */,
+				A4990C4219B2E2FB00A06BB7 /* GlobalSettingsViewController.m */,
 			);
 			name = UI;
 			sourceTree = "<group>";
@@ -147,6 +162,17 @@
 				A4C8714E19AC16F10008A603 /* Pieces & Player */,
 			);
 			name = ADT;
+			sourceTree = "<group>";
+		};
+		A4990C3A19B2E25B00A06BB7 /* Framework, Bluetooth & UI */ = {
+			isa = PBXGroup;
+			children = (
+				A433CF5D19A2D940008C0BA2 /* Bluetooth */,
+				A433CF5E19A2D949008C0BA2 /* UI */,
+				A433CF5F19A2D94F008C0BA2 /* API  */,
+				A475F1D119A45F17002D3667 /* ADT */,
+			);
+			name = "Framework, Bluetooth & UI";
 			sourceTree = "<group>";
 		};
 		A4C8714D19AC16DE0008A603 /* Board & Tile */ = {
@@ -205,10 +231,7 @@
 		A4D2330C1991E2840048E49B /* Tiles!® Board Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A475F1D119A45F17002D3667 /* ADT */,
-				A433CF5F19A2D94F008C0BA2 /* API  */,
-				A433CF5E19A2D949008C0BA2 /* UI */,
-				A433CF5D19A2D940008C0BA2 /* Bluetooth */,
+				A4990C3A19B2E25B00A06BB7 /* Framework, Bluetooth & UI */,
 			);
 			path = "Tiles!® Board Controller";
 			sourceTree = "<group>";
@@ -348,11 +371,14 @@
 				A475F1CE19A45F0E002D3667 /* Player.m in Sources */,
 				A475F1D019A45F0E002D3667 /* Tile.m in Sources */,
 				A4D233171991E2840048E49B /* AppDelegate.m in Sources */,
+				A4990C4019B2E2DE00A06BB7 /* GameSetupViewController.m in Sources */,
+				A4990C3D19B2E2C100A06BB7 /* GameMenuViewController.m in Sources */,
 				A475F1CA19A45F0E002D3667 /* Board.m in Sources */,
 				A4AA69AE19A1B07000D88199 /* Touch.m in Sources */,
 				A4D233131991E2840048E49B /* main.m in Sources */,
 				A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */,
 				A475F1BB19A454D1002D3667 /* Controller.m in Sources */,
+				A4990C4319B2E2FB00A06BB7 /* GlobalSettingsViewController.m in Sources */,
 				A4499A7719A370DE003B4904 /* Colour.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
