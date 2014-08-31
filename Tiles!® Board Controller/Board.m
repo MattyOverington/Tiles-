@@ -51,6 +51,10 @@
     assert(x < [self.allGridSquares count]);
     
     return [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
+};
+
+- (Tile *)tileWithTouch:(Touch*)touch {
+    return [self tileWithX:touch.x Y:touch.y];
 }
 
 

@@ -12,6 +12,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Tile.h"
+#import "Touch.h"
 
 @interface Board : NSObject
 
@@ -19,6 +20,7 @@
 
 -(id)initWithWidth:(NSInteger)width height:(NSInteger)height;
 -(Tile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
+-(Tile*)tileWithTouch:(Touch*)touch;
 
 -(void) moveContentsOfTile:(Tile*)firstTile toTile:(Tile*)secondTile;
 -(void) deleteContentsOfTile:(Tile*)tile;

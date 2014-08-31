@@ -13,4 +13,6 @@
 @property NSInteger x;
 @property NSInteger y;
 
+-(id)initWithX:(NSInteger)x Y:(NSInteger)y;
+
 @end

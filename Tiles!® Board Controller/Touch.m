@@ -10,4 +10,11 @@
 
 @implementation Touch
 
+- (id)initWithX:(NSInteger)x Y:(NSInteger)y {
+    self.x = x;
+    self.y = y;
+    
+    return self;
+}
+
 @end
