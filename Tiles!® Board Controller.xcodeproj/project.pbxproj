@@ -175,6 +175,13 @@
 			name = "Framework, Bluetooth & UI";
 			sourceTree = "<group>";
 		};
+		A4990C4419B2E47E00A06BB7 /* Games */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Games;
+			sourceTree = "<group>";
+		};
 		A4C8714D19AC16DE0008A603 /* Board & Tile */ = {
 			isa = PBXGroup;
 			children = (
@@ -231,6 +238,7 @@
 		A4D2330C1991E2840048E49B /* Tiles!® Board Controller */ = {
 			isa = PBXGroup;
 			children = (
+				A4990C4419B2E47E00A06BB7 /* Games */,
 				A4990C3A19B2E25B00A06BB7 /* Framework, Bluetooth & UI */,
 			);
 			path = "Tiles!® Board Controller";

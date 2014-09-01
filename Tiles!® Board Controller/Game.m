@@ -16,8 +16,8 @@
 @property Player* player1;
 @property Player* player2;
 
-
 @end
+
 @implementation Game
 
 - (id)init {
