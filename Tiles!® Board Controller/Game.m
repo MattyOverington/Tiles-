@@ -32,17 +32,24 @@
     return _gameBoard;
 }
 
-- (void)nextTurn {
-    
-}
-
-- (void)nextMove {
-    
-}
 
 - (BOOL)isLegalMove {
    
     return FALSE;
+}
+
+- (void)nextTurn {
+    
+}
+
+- (void)runGame {
+    
+}
+
+- (void)perormActionsWithTouches:(NSArray *)touches {
+    
+    
+    
 }
 
 

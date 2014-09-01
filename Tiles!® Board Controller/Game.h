@@ -16,7 +16,8 @@
 @property NSInteger turnNumber;
 
 -(BOOL)isLegalMove;
+-(void)runGame;
 -(void)nextTurn;
--(void)nextMove;
+-(void)perormActionsWithTouches:(NSArray*)touches;
 
 @end

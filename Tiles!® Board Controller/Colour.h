@@ -7,6 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ColourValues.h"
 
 @interface Colour : NSObject
 
