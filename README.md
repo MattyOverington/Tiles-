@@ -10,6 +10,7 @@ THINGS TO DO
 Matty
 
 - Sort out arduino to get reading & sending of data optimal for our uses
+- Possiby code any arduino sketches
 - Link Controller for both sides of the project
 - Set up delegtion to enable connection for arduino
 - Add any helpful functions for framework
