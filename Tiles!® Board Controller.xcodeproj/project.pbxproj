@@ -33,6 +33,7 @@
 		A4D233221991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
 		A4D2332A1991E2840048E49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D233281991E2840048E49B /* InfoPlist.strings */; };
 		A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */; };
+		B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BC151919B6CBFC00BC0B4A /* PianoTile.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -90,6 +91,8 @@
 		A4D233271991E2840048E49B /* Tiles!® Board ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board ControllerTests-Info.plist"; sourceTree = "<group>"; };
 		A4D233291991E2840048E49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
+		B7BC151819B6CBFC00BC0B4A /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
+		B7BC151919B6CBFC00BC0B4A /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +183,7 @@
 		A4990C4419B2E47E00A06BB7 /* Games */ = {
 			isa = PBXGroup;
 			children = (
+				B7BC151B19B6CC0700BC0B4A /* Piano Tiles */,
 			);
 			name = Games;
 			sourceTree = "<group>";
@@ -277,6 +281,15 @@
 				A4D233281991E2840048E49B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B7BC151B19B6CC0700BC0B4A /* Piano Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				B7BC151819B6CBFC00BC0B4A /* PianoTile.h */,
+				B7BC151919B6CBFC00BC0B4A /* PianoTile.m */,
+			);
+			name = "Piano Tiles";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -386,6 +399,7 @@
 				A475F1CA19A45F0E002D3667 /* Board.m in Sources */,
 				A4AA69AE19A1B07000D88199 /* Touch.m in Sources */,
 				A4D233131991E2840048E49B /* main.m in Sources */,
+				B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */,
 				A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */,
 				A475F1BB19A454D1002D3667 /* Controller.m in Sources */,
 				A4990C4319B2E2FB00A06BB7 /* GlobalSettingsViewController.m in Sources */,
