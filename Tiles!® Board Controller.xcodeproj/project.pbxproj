@@ -34,6 +34,10 @@
 		A4D2332A1991E2840048E49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D233281991E2840048E49B /* InfoPlist.strings */; };
 		A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */; };
 		B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BC151919B6CBFC00BC0B4A /* PianoTile.m */; };
+		B7F662E519BD68D900B5D2A1 /* SpriteMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */; };
+		B7F662E719BD68F100B5D2A1 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7F662E619BD68F100B5D2A1 /* README.rtf */; };
+		B7F662EA19BD69AF00B5D2A1 /* iPadTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662E919BD69AF00B5D2A1 /* iPadTile.m */; };
+		B7F662ED19BD69C500B5D2A1 /* iPadBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662EC19BD69C500B5D2A1 /* iPadBoard.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +97,13 @@
 		A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
 		B7BC151819B6CBFC00BC0B4A /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
 		B7BC151919B6CBFC00BC0B4A /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
+		B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteMyScene.h; sourceTree = "<group>"; };
+		B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteMyScene.m; sourceTree = "<group>"; };
+		B7F662E619BD68F100B5D2A1 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
+		B7F662E819BD69AF00B5D2A1 /* iPadTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadTile.h; sourceTree = "<group>"; };
+		B7F662E919BD69AF00B5D2A1 /* iPadTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadTile.m; sourceTree = "<group>"; };
+		B7F662EB19BD69C500B5D2A1 /* iPadBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadBoard.h; sourceTree = "<group>"; };
+		B7F662EC19BD69C500B5D2A1 /* iPadBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadBoard.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -244,6 +255,7 @@
 		A4D2330C1991E2840048E49B /* Tiles!® Board Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B7F662DC19BD684900B5D2A1 /* iPad independant stuff. */,
 				A4990C4419B2E47E00A06BB7 /* Games */,
 				A4990C3A19B2E25B00A06BB7 /* Framework, Bluetooth & UI */,
 			);
@@ -290,6 +302,20 @@
 				B7BC151919B6CBFC00BC0B4A /* PianoTile.m */,
 			);
 			name = "Piano Tiles";
+			sourceTree = "<group>";
+		};
+		B7F662DC19BD684900B5D2A1 /* iPad independant stuff. */ = {
+			isa = PBXGroup;
+			children = (
+				B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */,
+				B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */,
+				B7F662E819BD69AF00B5D2A1 /* iPadTile.h */,
+				B7F662E919BD69AF00B5D2A1 /* iPadTile.m */,
+				B7F662EB19BD69C500B5D2A1 /* iPadBoard.h */,
+				B7F662EC19BD69C500B5D2A1 /* iPadBoard.m */,
+				B7F662E619BD68F100B5D2A1 /* README.rtf */,
+			);
+			name = "iPad independant stuff.";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -369,6 +395,7 @@
 			files = (
 				A4D233191991E2840048E49B /* Images.xcassets in Resources */,
 				A464152C19AF3DBC00256047 /* InfoPlist.strings in Resources */,
+				B7F662E719BD68F100B5D2A1 /* README.rtf in Resources */,
 				A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -394,8 +421,11 @@
 				A475F1CE19A45F0E002D3667 /* Player.m in Sources */,
 				A475F1D019A45F0E002D3667 /* Tile.m in Sources */,
 				A4D233171991E2840048E49B /* AppDelegate.m in Sources */,
+				B7F662E519BD68D900B5D2A1 /* SpriteMyScene.m in Sources */,
 				A4990C4019B2E2DE00A06BB7 /* GameSetupViewController.m in Sources */,
 				A4990C3D19B2E2C100A06BB7 /* GameMenuViewController.m in Sources */,
+				B7F662ED19BD69C500B5D2A1 /* iPadBoard.m in Sources */,
+				B7F662EA19BD69AF00B5D2A1 /* iPadTile.m in Sources */,
 				A475F1CA19A45F0E002D3667 /* Board.m in Sources */,
 				A4AA69AE19A1B07000D88199 /* Touch.m in Sources */,
 				A4D233131991E2840048E49B /* main.m in Sources */,
