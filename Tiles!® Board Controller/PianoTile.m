@@ -10,4 +10,12 @@
 
 @implementation PianoTile
 
+
+-(void)touchAtSquare:(iPadTile *)touchedSquare {
+    
+    
+    
+    
+    
+}
 @end

@@ -12,6 +12,7 @@
 -(id)initWithPosition:(CGFloat)x :(CGFloat)y contents:(id)contents {
     self.x = x;
     self.y = y;
+    self.position = CGPointMake(x, y);
     self.contents = contents;
     if (self.contents == nil) {
         self.isFree = YES;

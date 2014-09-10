@@ -10,7 +10,8 @@
 #import "iPadTile.h"
 #import "Touch.h"
 
-
+#define MAX_GRID_X 8
+#define MAX_GRID_Y 8
 @interface iPadBoard : NSObject
 
 
@@ -19,7 +20,7 @@
 -(id)initWithWidth:(NSInteger)width height:(NSInteger)height;
 -(iPadTile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
 -(iPadTile*)tileWithTouch:(Touch*)touch;
--(iPadTile*)squareWithPosition:(CGPoint)position;
+-(iPadTile*)tileWithPosition:(CGPoint)position;
 
 -(void) moveContentsOfTile:(iPadTile*)firstTile toTile:(iPadTile*)secondTile;
 -(void) deleteContentsOfTile:(iPadTile*)tile;

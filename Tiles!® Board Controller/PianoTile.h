@@ -8,13 +8,20 @@
 
 #import <Foundation/Foundation.h>
 
+#import "iPadBoard.h"
+@protocol PianoTileDelegate
+
+
+@end
+
+
 @interface PianoTile : NSObject
 
 
 @property BOOL color; //black or white
 @property BOOL isTouched;
 
-
+-(void)touchAtSquare:(iPadTile *)touchedSquare;
 
 /*
 Have a method that shifts all tiles to the row below, then generate new row with black tile on random column.

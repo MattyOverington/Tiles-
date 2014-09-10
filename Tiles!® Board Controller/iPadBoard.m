@@ -41,7 +41,7 @@
 
 
 
--(Tile *)tileWithX:(NSInteger)x Y:(NSInteger)y {
+-(iPadTile *)tileWithX:(NSInteger)x Y:(NSInteger)y {
     assert(x > -1);
     assert(y > -1);
     
@@ -50,8 +50,19 @@
     
     return [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
 };
+-(iPadTile*)tileWithPosition:(CGPoint)position {
+    assert(position.x > -1);
+    assert(position.y > -1);
+    
+    assert(position.y < [self.allGridSquares count]);
+    assert(position.x < [self.allGridSquares count]);
+    
+    return [[self.allGridSquares objectAtIndex:position.x] objectAtIndex:position.y];
+}
 
-- (Tile *)tileWithTouch:(Touch*)touch {
+
+
+- (iPadTile *)tileWithTouch:(Touch*)touch {
     return [self tileWithX:touch.x Y:touch.y];
 }
 
@@ -65,12 +76,12 @@
     [tile deleteContents];
 }
 
-- (void)assignContentsOfTile:(Tile *)tile withContents:(Piece *)piece {
+- (void)assignContentsOfTile:(iPadTile *)tile withContents:(Piece *)piece {
     [tile replaceContentsWith:piece];
 }
 
 - (void)changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c{
-    Tile* t = [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
+    iPadTile* t = [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
     [t setTileColour: c];
 }
 
@@ -95,7 +106,7 @@
         [tilesToChange addObject:[self.allGridSquares objectsAtIndexes:i]];
     }
     
-    for (Tile* t in tilesToChange) {
+    for (iPadTile* t in tilesToChange) {
         [t setTileColour:c];
     }
 }

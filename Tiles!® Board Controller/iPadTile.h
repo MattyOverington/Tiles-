@@ -18,6 +18,7 @@
 @property BOOL isFree;
 @property CGFloat x;
 @property CGFloat y;
+@property CGPoint position;
 @property Piece* contents;
 @property Colour* tileColour;
 

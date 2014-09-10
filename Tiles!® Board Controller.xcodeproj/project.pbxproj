@@ -31,8 +31,8 @@
 		A4D233201991E2840048E49B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2331F1991E2840048E49B /* XCTest.framework */; };
 		A4D233211991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
 		A4D233221991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
-		A4D2332A1991E2840048E49B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = A4D233281991E2840048E49B /* InfoPlist.strings */; };
 		A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */; };
+		B7344A0F19BE90FE0029947A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B7344A0D19BE90FE0029947A /* InfoPlist.strings */; };
 		B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BC151919B6CBFC00BC0B4A /* PianoTile.m */; };
 		B7F662E519BD68D900B5D2A1 /* SpriteMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */; };
 		B7F662E719BD68F100B5D2A1 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7F662E619BD68F100B5D2A1 /* README.rtf */; };
@@ -93,8 +93,8 @@
 		A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiles!® Board ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D2331F1991E2840048E49B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A4D233271991E2840048E49B /* Tiles!® Board ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board ControllerTests-Info.plist"; sourceTree = "<group>"; };
-		A4D233291991E2840048E49B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
+		B7344A0E19BE90FE0029947A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B7BC151819B6CBFC00BC0B4A /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
 		B7BC151919B6CBFC00BC0B4A /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
 		B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteMyScene.h; sourceTree = "<group>"; };
@@ -290,7 +290,7 @@
 			isa = PBXGroup;
 			children = (
 				A4D233271991E2840048E49B /* Tiles!® Board ControllerTests-Info.plist */,
-				A4D233281991E2840048E49B /* InfoPlist.strings */,
+				B7344A0D19BE90FE0029947A /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -404,7 +404,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D2332A1991E2840048E49B /* InfoPlist.strings in Resources */,
+				B7344A0F19BE90FE0029947A /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,10 +456,10 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		A4D233281991E2840048E49B /* InfoPlist.strings */ = {
+		B7344A0D19BE90FE0029947A /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				A4D233291991E2840048E49B /* en */,
+				B7344A0E19BE90FE0029947A /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
