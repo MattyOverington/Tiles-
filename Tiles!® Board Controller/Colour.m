@@ -18,10 +18,11 @@
 
 @implementation Colour
 
-- (void)initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
-    self.r = red;
-    self.b = blue;
-    self.g = green;
++ (void)initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
+    Colour*c = [[Colour alloc]init];
+    c.r = red;
+    c.g = green;
+    c.b = blue;
 }
 
 - (NSInteger)red {
@@ -34,6 +35,12 @@
 
 - (NSInteger)blue {
     return self.b;
+}
++(void)colourWithPreset:(NSArray *)preset {
+    Colour*c = [[Colour alloc]init];
+    c.r = [preset objectAtIndex:0];
+    c.g = [preset objectAtIndex:1];
+    c.b = [preset objectAtIndex:2];
 }
 
 @end

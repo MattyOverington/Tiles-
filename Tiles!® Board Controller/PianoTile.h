@@ -8,19 +8,28 @@
 
 #import <Foundation/Foundation.h>
 
-#import "iPadBoard.h"
+#import "iPadTile.h"
+
 @protocol PianoTileDelegate
+-(iPadTile*)tileWithTouch:(Touch*)touch;
+-(void) moveContentsOfTile:(iPadTile*)firstTile toTile:(iPadTile*)secondTile;
+-(void) deleteContentsOfTile:(iPadTile*)tile;
+-(void) assignContentsOfTile:(iPadTile*)tile withContents:(id) contents;
+-(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents;
 
 
+- (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c;
+-(void) changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c;
+-(void) changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger) y2 toColour:(Colour*) c;
+-(void) changeColorOfAllTiles:(Colour*) colour;
 @end
 
 
 @interface PianoTile : NSObject
 
 
-@property BOOL color; //black or white
-@property BOOL isTouched;
 
+@property id<PianoTileDelegate> delegate;
 -(void)touchAtSquare:(iPadTile *)touchedSquare;
 
 /*

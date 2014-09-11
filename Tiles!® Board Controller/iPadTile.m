@@ -37,7 +37,7 @@
 }
 
 -(void)setColour:(Colour *)colour {
-    self.colour = colour;
+    self.tileColour = colour;
 }
 
 @end

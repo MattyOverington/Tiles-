@@ -23,6 +23,4 @@
 #define COLOUR_SEA_BLUE {15, 130, 125}
 #define COLOUR_LIGHT_PINK {225, 173, 225}
 #define COLOUR_BRONZE {186, 121, 0}
-
-//HOLY FKING FFOOD GOD IT WORKKKKKEDDDDDDDD (mega guitar solo)
-//now hopefully im logged in as magical-ushanka
+#define COLOUR_GRAY {110, 110, 110}

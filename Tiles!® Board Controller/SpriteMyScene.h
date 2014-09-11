@@ -8,7 +8,6 @@
 
 #import <SpriteKit/SpriteKit.h>
 #import "iPadBoard.h"
-#import "PianoTile.h"
 
 @interface SpriteMyScene : SKScene
 

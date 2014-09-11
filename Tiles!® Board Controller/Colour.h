@@ -15,6 +15,6 @@
 @property (readonly) NSInteger green;
 @property (readonly) NSInteger blue;
 
--(void)initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
-
++(void)initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue;
++(void)colourWithPreset:(NSArray *)preset;
 @end

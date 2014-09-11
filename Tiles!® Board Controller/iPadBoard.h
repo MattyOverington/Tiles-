@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "iPadTile.h"
 #import "Touch.h"
+#import "PianoTile.h"
 
 #define MAX_GRID_X 8
 #define MAX_GRID_Y 8
@@ -21,11 +22,15 @@
 -(iPadTile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
 -(iPadTile*)tileWithTouch:(Touch*)touch;
 -(iPadTile*)tileWithPosition:(CGPoint)position;
+-(void)touchFromArduinoX:(NSInteger)x Y:(NSInteger)y;
 
 -(void) moveContentsOfTile:(iPadTile*)firstTile toTile:(iPadTile*)secondTile;
 -(void) deleteContentsOfTile:(iPadTile*)tile;
--(void) assignContentsOfTile:(iPadTile*)tile withContents:(iPadTile*) piece;
+-(void) assignContentsOfTile:(iPadTile*)tile withContents:(id) contents;
+-(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents;
 
+
+- (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c;
 -(void) changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c;
 -(void) changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger) y2 toColour:(Colour*) c;
 -(void) changeColorOfAllTiles:(Colour*) colour;

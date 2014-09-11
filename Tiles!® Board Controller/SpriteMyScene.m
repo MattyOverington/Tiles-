@@ -10,7 +10,6 @@
 
 @interface SpriteMyScene () <SKPhysicsContactDelegate>
 @property (nonatomic) iPadBoard*grid;
-@property id game;
 @end
 
 
@@ -28,7 +27,7 @@
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.game = [[PianoTile alloc]init];
+        
                 self.physicsWorld.contactDelegate = self;
         
     }
@@ -46,9 +45,9 @@
         float xValue = CGRectGetMinX(self.frame) + xlineNumber / (float) MAX_GRID_X * (CGRectGetWidth(self.frame)-8) + 20;
         float yValue = CGRectGetMinY(self.frame) + ylineNumber  / (float) MAX_GRID_Y * CGRectGetHeight(self.frame) + 20;
         
-        iPadTile* touchedSquare = [self.grid tileWithPosition:CGPointMake(xValue, yValue)];
+        
             //run a method in the game which decides what to do
-        [self.game touchAtSquare:touchedSquare];
+        [self.grid touchFromArduinoX:xValue Y:yValue];
         }
     }
 

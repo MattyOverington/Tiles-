@@ -8,6 +8,7 @@
 
 #import "iPadBoard.h"
 @interface iPadBoard ()
+@property id game;
 
 @property (readwrite) NSMutableArray* allGridSquares;
 @property NSInteger height;
@@ -35,10 +36,13 @@
             [[self.allGridSquares objectAtIndex:i] addObject:t];
         }
     }
-    
+    self.game = [[PianoTile alloc]init];
     return self;
 }
-
+-(void)touchFromArduinoX:(NSInteger)x Y:(NSInteger)y{
+    [self tileWithX:x Y:y];
+    [self.game touchAtSquare:[self tileWithX:x Y:y]];
+}
 
 
 -(iPadTile *)tileWithX:(NSInteger)x Y:(NSInteger)y {
@@ -76,13 +80,25 @@
     [tile deleteContents];
 }
 
-- (void)assignContentsOfTile:(iPadTile *)tile withContents:(Piece *)piece {
-    [tile replaceContentsWith:piece];
+-(void) assignContentsOfTile:(iPadTile*)tile withContents:(id) contents {
+    [tile assignContents:contents];
 }
+-(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents {
+    [tile replaceContentsWith:contents];
+}
+
+
 
 - (void)changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c{
     iPadTile* t = [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
     [t setTileColour: c];
+}
+
+
+
+- (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c{
+    [tile setTileColour:c];
+
 }
 
 - (void)changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger)y2 toColour:(Colour *)c {
