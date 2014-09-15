@@ -11,8 +11,7 @@
 @property id game;
 
 @property (readwrite) NSMutableArray* allGridSquares;
-@property NSInteger height;
-@property NSInteger width;
+
 
 
 @end

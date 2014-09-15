@@ -9,19 +9,28 @@
 #import <Foundation/Foundation.h>
 
 #import "iPadTile.h"
+#import "Touch.h"
 
 @protocol PianoTileDelegate
--(iPadTile*)tileWithTouch:(Touch*)touch;
+-(iPadTile*)tileWithTouch:(Touch *)touch;
+-(iPadTile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
+
+
 -(void) moveContentsOfTile:(iPadTile*)firstTile toTile:(iPadTile*)secondTile;
 -(void) deleteContentsOfTile:(iPadTile*)tile;
 -(void) assignContentsOfTile:(iPadTile*)tile withContents:(id) contents;
 -(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents;
 
 
+
 - (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c;
 -(void) changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c;
 -(void) changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger) y2 toColour:(Colour*) c;
 -(void) changeColorOfAllTiles:(Colour*) colour;
+
+@property NSInteger height;
+@property NSInteger width;
+
 @end
 
 

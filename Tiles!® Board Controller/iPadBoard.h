@@ -13,11 +13,12 @@
 
 #define MAX_GRID_X 8
 #define MAX_GRID_Y 8
-@interface iPadBoard : NSObject
+@interface iPadBoard : NSObject <PianoTileDelegate>
 
 
 @property (readonly) NSMutableArray* allTiles;
-
+@property NSInteger height;
+@property NSInteger width;
 -(id)initWithWidth:(NSInteger)width height:(NSInteger)height;
 -(iPadTile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
 -(iPadTile*)tileWithTouch:(Touch*)touch;

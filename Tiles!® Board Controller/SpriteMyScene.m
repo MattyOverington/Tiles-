@@ -29,7 +29,14 @@
         
         
                 self.physicsWorld.contactDelegate = self;
-        
+        for (NSInteger i = self.grid.height; i > 0; i--) {
+            for (NSInteger j = 0; j < self.grid.width; j++) {
+                
+                
+                
+                
+            }
+        }
     }
     return self;
     
