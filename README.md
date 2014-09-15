@@ -1,6 +1,8 @@
 - Tiles-
 =========
 
+Matt i got a question, should i just do one commit at the end of the lesson or should i commit more?
+
 the bwi is all around us
 
 
@@ -22,3 +24,5 @@ Copcutt
 - POSSIBLY Do art for UI (DEFINTELY NOT A PRIORITY, just unitl I get arduino sorted)
 - Add any helpful functions for framework
 - CODE FIRST GAME (to be decided upon)
+
+
