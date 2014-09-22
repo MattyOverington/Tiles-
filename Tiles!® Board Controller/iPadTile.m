@@ -36,7 +36,7 @@
     self.isFree = YES;
 }
 
--(void)setColour:(Colour *)colour {
+-(void)setTileColour:(Colour *)colour {
     self.tileColour = colour;
 }
 

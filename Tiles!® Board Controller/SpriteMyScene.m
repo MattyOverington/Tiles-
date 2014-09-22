@@ -10,17 +10,24 @@
 
 @interface SpriteMyScene () <SKPhysicsContactDelegate>
 @property (nonatomic) iPadBoard*grid;
+@property (nonatomic)  NSMutableArray* lights;
 @end
 
 
 @implementation SpriteMyScene
 -(iPadBoard *)grid {
     if (!_grid) {
-        _grid = [[iPadBoard alloc]init];
+        _grid = [[iPadBoard alloc]initWithWidth:8 height:8];
     }
     return _grid;
 }
-
+-(NSMutableArray*)lights {
+    if(!_lights) {
+        _lights = [[NSMutableArray alloc]init];
+        
+    }
+    return _lights;
+}
 
 
 -(id)initWithSize:(CGSize)size {    
@@ -28,14 +35,23 @@
         /* Setup your scene here */
         
         
-                self.physicsWorld.contactDelegate = self;
-        for (NSInteger i = self.grid.height; i > 0; i--) {
+               // self.physicsWorld.contactDelegate = self;
+        for (NSInteger i = 0; i < self.grid.height; i++) {
+            //NSMutableArray*row = [[NSMutableArray alloc]init];
             for (NSInteger j = 0; j < self.grid.width; j++) {
-                
-                
+                CGSize size = CGSizeMake(CGRectGetWidth(self.frame)/self.grid.width, CGRectGetHeight(self.frame)/self.grid.height);
+                CGPoint position = CGPointMake(CGRectGetWidth(self.frame)/self.grid.width*j, CGRectGetHeight(self.frame)/self.grid.height*i);
+                UIColor* colour = [UIColor colorWithRed:255 green:0 blue:0 alpha:1];
+                SKSpriteNode* rect = [[SKSpriteNode alloc]initWithColor:colour size:size];
+                rect.position = position;
+                rect.name = [NSString stringWithFormat:@"%d,%d", j,i];
+                [self addChild:rect];
+                //[row addObject:rect];
+               
                 
                 
             }
+            //[self.lights addObject:row];
         }
     }
     return self;

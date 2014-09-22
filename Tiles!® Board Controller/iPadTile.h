@@ -26,7 +26,7 @@
 -(void)replaceContentsWith:(id)contents;
 -(void)assignContents:(id)contents;
 -(void)deleteContents;
--(void)setColour:(Colour *)colour;
+-(void)setTileColour:(Colour *)colour;
 
 
 @end

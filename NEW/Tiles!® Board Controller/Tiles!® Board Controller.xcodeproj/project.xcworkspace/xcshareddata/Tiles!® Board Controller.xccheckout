@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>EFECBA42-0672-4F9B-A344-252A4CE5FD4E</string>
+	<string>23A328B7-5FA4-4559-89D5-677C4610E50F</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Tiles!® Board Controller</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/MattyOverington/Tiles-.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Tiles!® Board Controller.xcodeproj/project.xcworkspace</string>
+	<string>NEW/Tiles!® Board Controller/Tiles!® Board Controller.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>166D8DD6-D62D-4035-9849-690891391478</key>
-		<string>../..</string>
+		<string>../../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/MattyOverington/Tiles-.git</string>

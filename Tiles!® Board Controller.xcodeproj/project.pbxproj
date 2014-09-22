@@ -31,8 +31,10 @@
 		A4D233211991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
 		A4D233221991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
 		A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */; };
+		B7018D2A19C93EE500736362 /* SpriteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7018D2919C93EE500736362 /* SpriteAppDelegate.m */; };
 		B72BC16519C6A34D0035E28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B72BC16319C6A34D0035E28F /* InfoPlist.strings */; };
 		B72BC16719C6A38F0035E28F /* Tiles!® Board Controller-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B72BC16619C6A38F0035E28F /* Tiles!® Board Controller-Info.plist */; };
+		B7A7C90C19C7CB5A00ADAE16 /* SpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A7C90B19C7CB5A00ADAE16 /* SpriteViewController.m */; };
 		B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BC151919B6CBFC00BC0B4A /* PianoTile.m */; };
 		B7F662E519BD68D900B5D2A1 /* SpriteMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */; };
 		B7F662E719BD68F100B5D2A1 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7F662E619BD68F100B5D2A1 /* README.rtf */; };
@@ -92,8 +94,12 @@
 		A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiles!® Board ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4D2331F1991E2840048E49B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
+		B7018D2819C93EE500736362 /* SpriteAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteAppDelegate.h; sourceTree = "<group>"; };
+		B7018D2919C93EE500736362 /* SpriteAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteAppDelegate.m; sourceTree = "<group>"; };
 		B72BC16419C6A34D0035E28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B72BC16619C6A38F0035E28F /* Tiles!® Board Controller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tiles!® Board Controller-Info.plist"; sourceTree = "<group>"; };
+		B7A7C90A19C7CB5A00ADAE16 /* SpriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteViewController.h; sourceTree = "<group>"; };
+		B7A7C90B19C7CB5A00ADAE16 /* SpriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteViewController.m; sourceTree = "<group>"; };
 		B7BC151819B6CBFC00BC0B4A /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
 		B7BC151919B6CBFC00BC0B4A /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
 		B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteMyScene.h; sourceTree = "<group>"; };
@@ -305,6 +311,10 @@
 		B7F662DC19BD684900B5D2A1 /* iPad independant stuff. */ = {
 			isa = PBXGroup;
 			children = (
+				B7018D2819C93EE500736362 /* SpriteAppDelegate.h */,
+				B7018D2919C93EE500736362 /* SpriteAppDelegate.m */,
+				B7A7C90A19C7CB5A00ADAE16 /* SpriteViewController.h */,
+				B7A7C90B19C7CB5A00ADAE16 /* SpriteViewController.m */,
 				B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */,
 				B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */,
 				B7F662E819BD69AF00B5D2A1 /* iPadTile.h */,
@@ -426,8 +436,10 @@
 				B7F662EA19BD69AF00B5D2A1 /* iPadTile.m in Sources */,
 				A475F1CA19A45F0E002D3667 /* Board.m in Sources */,
 				A4AA69AE19A1B07000D88199 /* Touch.m in Sources */,
+				B7018D2A19C93EE500736362 /* SpriteAppDelegate.m in Sources */,
 				A4D233131991E2840048E49B /* main.m in Sources */,
 				B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */,
+				B7A7C90C19C7CB5A00ADAE16 /* SpriteViewController.m in Sources */,
 				A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */,
 				A475F1BB19A454D1002D3667 /* Controller.m in Sources */,
 				A4990C4319B2E2FB00A06BB7 /* GlobalSettingsViewController.m in Sources */,
