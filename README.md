@@ -1,8 +1,6 @@
 - Tiles-
 =========
 
-Matt i got a question, should i just do one commit at the end of the lesson or should i commit more?
-
 the bwi is all around us
 
 
