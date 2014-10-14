@@ -24,6 +24,19 @@
 		B76F07CA19CFD86700F63CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A519CFD86600F63CBE /* UIKit.framework */; };
 		B76F07D219CFD86700F63CBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B76F07D019CFD86700F63CBE /* InfoPlist.strings */; };
 		B76F07D419CFD86700F63CBE /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07D319CFD86700F63CBE /* Tiles___Board_ControllerTests.m */; };
+		B76F07E119CFD8AB00F63CBE /* iPadTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07DE19CFD8AB00F63CBE /* iPadTile.m */; };
+		B76F07E219CFD8AB00F63CBE /* iPadBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07E019CFD8AB00F63CBE /* iPadBoard.m */; };
+		B76F07EC19CFD91900F63CBE /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07E619CFD91900F63CBE /* Touch.m */; };
+		B76F07ED19CFD91900F63CBE /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07E819CFD91900F63CBE /* Colour.m */; };
+		B76F07EE19CFD91900F63CBE /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07EA19CFD91900F63CBE /* Controller.m */; };
+		B76F07F419CFD93600F63CBE /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07F119CFD93600F63CBE /* Piece.m */; };
+		B76F07F519CFD93600F63CBE /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07F319CFD93600F63CBE /* Player.m */; };
+		B76F07FB19CFD95100F63CBE /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07F819CFD95100F63CBE /* Tile.m */; };
+		B76F07FC19CFD95100F63CBE /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07FA19CFD95100F63CBE /* Board.m */; };
+		B76F080119CFD97700F63CBE /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080019CFD97700F63CBE /* PianoTile.m */; };
+		B76F080619CFD98900F63CBE /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080319CFD98900F63CBE /* Device.m */; };
+		B76F080719CFD98900F63CBE /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080519CFD98900F63CBE /* Bluetooth.m */; };
+		B76F080A19CFD99D00F63CBE /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080919CFD99D00F63CBE /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +73,33 @@
 		B76F07CF19CFD86700F63CBE /* Tiles!® Board ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board ControllerTests-Info.plist"; sourceTree = "<group>"; };
 		B76F07D119CFD86700F63CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B76F07D319CFD86700F63CBE /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
+		B76F07DD19CFD8AB00F63CBE /* iPadTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadTile.h; sourceTree = "<group>"; };
+		B76F07DE19CFD8AB00F63CBE /* iPadTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadTile.m; sourceTree = "<group>"; };
+		B76F07DF19CFD8AB00F63CBE /* iPadBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadBoard.h; sourceTree = "<group>"; };
+		B76F07E019CFD8AB00F63CBE /* iPadBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadBoard.m; sourceTree = "<group>"; };
+		B76F07E519CFD91900F63CBE /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
+		B76F07E619CFD91900F63CBE /* Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
+		B76F07E719CFD91900F63CBE /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		B76F07E819CFD91900F63CBE /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		B76F07E919CFD91900F63CBE /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		B76F07EA19CFD91900F63CBE /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		B76F07EB19CFD91900F63CBE /* ColourValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourValues.h; sourceTree = "<group>"; };
+		B76F07F019CFD93600F63CBE /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
+		B76F07F119CFD93600F63CBE /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
+		B76F07F219CFD93600F63CBE /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		B76F07F319CFD93600F63CBE /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		B76F07F719CFD95100F63CBE /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		B76F07F819CFD95100F63CBE /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		B76F07F919CFD95100F63CBE /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		B76F07FA19CFD95100F63CBE /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		B76F07FF19CFD97700F63CBE /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
+		B76F080019CFD97700F63CBE /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
+		B76F080219CFD98900F63CBE /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		B76F080319CFD98900F63CBE /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		B76F080419CFD98900F63CBE /* Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
+		B76F080519CFD98900F63CBE /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
+		B76F080819CFD99D00F63CBE /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		B76F080919CFD99D00F63CBE /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,13 +161,22 @@
 		B76F07A919CFD86600F63CBE /* Tiles!® Board Controller */ = {
 			isa = PBXGroup;
 			children = (
+				B76F07BB19CFD86700F63CBE /* MyScene.h */,
+				B76F07BC19CFD86700F63CBE /* MyScene.m */,
+				B7FF9FBE19D27F8500B13C95 /* IPAD BOARD AND TILES */,
+				B76F07FD19CFD96600F63CBE /* Games */,
+				B76F07F619CFD94500F63CBE /* Board and tiles */,
+				B76F07EF19CFD92A00F63CBE /* Piece and player */,
+				B76F07E419CFD90D00F63CBE /* API */,
+				B76F080219CFD98900F63CBE /* Device.h */,
+				B76F080319CFD98900F63CBE /* Device.m */,
+				B76F080419CFD98900F63CBE /* Bluetooth.h */,
+				B76F080519CFD98900F63CBE /* Bluetooth.m */,
 				B76F07B219CFD86600F63CBE /* AppDelegate.h */,
 				B76F07B319CFD86600F63CBE /* AppDelegate.m */,
 				B76F07B519CFD86600F63CBE /* Main.storyboard */,
 				B76F07B819CFD86600F63CBE /* ViewController.h */,
 				B76F07B919CFD86700F63CBE /* ViewController.m */,
-				B76F07BB19CFD86700F63CBE /* MyScene.h */,
-				B76F07BC19CFD86700F63CBE /* MyScene.m */,
 				B76F07BE19CFD86700F63CBE /* Spaceship.png */,
 				B76F07C019CFD86700F63CBE /* Images.xcassets */,
 				B76F07AA19CFD86600F63CBE /* Supporting Files */,
@@ -162,6 +211,72 @@
 				B76F07D019CFD86700F63CBE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B76F07E419CFD90D00F63CBE /* API */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07E519CFD91900F63CBE /* Touch.h */,
+				B76F07E619CFD91900F63CBE /* Touch.m */,
+				B76F07E719CFD91900F63CBE /* Colour.h */,
+				B76F07E819CFD91900F63CBE /* Colour.m */,
+				B76F07EB19CFD91900F63CBE /* ColourValues.h */,
+				B76F07E919CFD91900F63CBE /* Controller.h */,
+				B76F07EA19CFD91900F63CBE /* Controller.m */,
+				B76F080819CFD99D00F63CBE /* Game.h */,
+				B76F080919CFD99D00F63CBE /* Game.m */,
+			);
+			name = API;
+			sourceTree = "<group>";
+		};
+		B76F07EF19CFD92A00F63CBE /* Piece and player */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07F019CFD93600F63CBE /* Piece.h */,
+				B76F07F119CFD93600F63CBE /* Piece.m */,
+				B76F07F219CFD93600F63CBE /* Player.h */,
+				B76F07F319CFD93600F63CBE /* Player.m */,
+			);
+			name = "Piece and player";
+			sourceTree = "<group>";
+		};
+		B76F07F619CFD94500F63CBE /* Board and tiles */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07F719CFD95100F63CBE /* Tile.h */,
+				B76F07F819CFD95100F63CBE /* Tile.m */,
+				B76F07F919CFD95100F63CBE /* Board.h */,
+				B76F07FA19CFD95100F63CBE /* Board.m */,
+			);
+			name = "Board and tiles";
+			sourceTree = "<group>";
+		};
+		B76F07FD19CFD96600F63CBE /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07FE19CFD96B00F63CBE /* Piano tiles */,
+			);
+			name = Games;
+			sourceTree = "<group>";
+		};
+		B76F07FE19CFD96B00F63CBE /* Piano tiles */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07FF19CFD97700F63CBE /* PianoTile.h */,
+				B76F080019CFD97700F63CBE /* PianoTile.m */,
+			);
+			name = "Piano tiles";
+			sourceTree = "<group>";
+		};
+		B7FF9FBE19D27F8500B13C95 /* IPAD BOARD AND TILES */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07DD19CFD8AB00F63CBE /* iPadTile.h */,
+				B76F07DE19CFD8AB00F63CBE /* iPadTile.m */,
+				B76F07DF19CFD8AB00F63CBE /* iPadBoard.h */,
+				B76F07E019CFD8AB00F63CBE /* iPadBoard.m */,
+			);
+			name = "IPAD BOARD AND TILES";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,10 +376,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B76F080A19CFD99D00F63CBE /* Game.m in Sources */,
 				B76F07BD19CFD86700F63CBE /* MyScene.m in Sources */,
+				B76F07EC19CFD91900F63CBE /* Touch.m in Sources */,
+				B76F07F419CFD93600F63CBE /* Piece.m in Sources */,
+				B76F080619CFD98900F63CBE /* Device.m in Sources */,
+				B76F07EE19CFD91900F63CBE /* Controller.m in Sources */,
+				B76F07E119CFD8AB00F63CBE /* iPadTile.m in Sources */,
 				B76F07BA19CFD86700F63CBE /* ViewController.m in Sources */,
+				B76F07F519CFD93600F63CBE /* Player.m in Sources */,
+				B76F07FB19CFD95100F63CBE /* Tile.m in Sources */,
 				B76F07B419CFD86600F63CBE /* AppDelegate.m in Sources */,
+				B76F07E219CFD8AB00F63CBE /* iPadBoard.m in Sources */,
 				B76F07B019CFD86600F63CBE /* main.m in Sources */,
+				B76F080719CFD98900F63CBE /* Bluetooth.m in Sources */,
+				B76F07ED19CFD91900F63CBE /* Colour.m in Sources */,
+				B76F07FC19CFD95100F63CBE /* Board.m in Sources */,
+				B76F080119CFD97700F63CBE /* PianoTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -477,6 +605,7 @@
 				B76F07D919CFD86700F63CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B76F07DA19CFD86700F63CBE /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */ = {
 			isa = XCConfigurationList;
@@ -485,6 +614,7 @@
 				B76F07DC19CFD86700F63CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

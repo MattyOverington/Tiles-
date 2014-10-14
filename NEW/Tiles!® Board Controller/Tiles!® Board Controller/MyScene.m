@@ -8,46 +8,94 @@
 
 #import "MyScene.h"
 
-@implementation MyScene
+@interface MyScene () <SKPhysicsContactDelegate>
+@property (nonatomic) iPadBoard*grid;
+@property (nonatomic)  NSMutableArray* lights;
+@end
 
--(id)initWithSize:(CGSize)size {    
+
+@implementation MyScene
+-(iPadBoard *)grid {
+    if (!_grid) {
+        _grid = [[iPadBoard alloc]initWithWidth:8 height:8];
+    }
+    return _grid;
+}
+-(NSMutableArray*)lights {
+    if(!_lights) {
+        _lights = [[NSMutableArray alloc]init];
+        
+    }
+    return _lights;
+}
+
+
+-(id)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         /* Setup your scene here */
         
-        self.backgroundColor = [SKColor colorWithRed:0.15 green:0.15 blue:0.3 alpha:1.0];
         
-        SKLabelNode *myLabel = [SKLabelNode labelNodeWithFontNamed:@"Chalkduster"];
-        
-        myLabel.text = @"Hello, World!";
-        myLabel.fontSize = 30;
-        myLabel.position = CGPointMake(CGRectGetMidX(self.frame),
-                                       CGRectGetMidY(self.frame));
-        
-        [self addChild:myLabel];
+        // self.physicsWorld.contactDelegate = self;
+        for (NSInteger i = 0; i < self.grid.height; i++) {
+            //NSMutableArray*row = [[NSMutableArray alloc]init];
+            for (NSInteger j = 0; j < self.grid.width; j++) {
+                
+                CGSize size = CGSizeMake(CGRectGetWidth(self.frame)/self.grid.width, CGRectGetHeight(self.frame)/self.grid.height);
+                
+                CGPoint position = CGPointMake(CGRectGetWidth(self.frame)/self.grid.width*j+size.width/2.0f, CGRectGetHeight(self.frame)/self.grid.height*i+size.height/2.0f);
+                
+                float num1 = arc4random_uniform(255)/255.0f;
+                float num2 = arc4random_uniform(255)/255.0f;
+                float num3 = arc4random_uniform(255)/255.0f;
+                
+                UIColor* colour = [UIColor colorWithRed:0 green:num2 blue:num3 alpha:1];
+                
+                SKSpriteNode* rect = [[SKSpriteNode alloc]initWithColor:colour size:size];
+                rect.position = position;
+                rect.name = [NSString stringWithFormat:@"%d,%d", j,i];
+                [self addChild:rect];
+                //[row addObject:rect];
+                
+                
+                
+            }
+            //[self.lights addObject:row];
+        }
     }
     return self;
+    
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /* Called when a touch begins */
-    
-    for (UITouch *touch in touches) {
+    for  (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
-        SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
-        sprite.position = location;
-        
-        SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
-        
-        [sprite runAction:[SKAction repeatActionForever:action]];
-        
-        [self addChild:sprite];
+        NSInteger xlineNumber = MAX_GRID_X * location.x / (float) (CGRectGetWidth(self.frame)-8);
+        NSInteger ylineNumber = MAX_GRID_Y * location.y / (float) CGRectGetHeight(self.frame);
+        //run a method in the game which decides what to do
+        [self.grid test];
+        [self.grid touchFromArduinoX:xlineNumber Y:ylineNumber];
     }
 }
 
+
+
 -(void)update:(CFTimeInterval)currentTime {
-    /* Called before each frame is rendered */
+    [self.grid update:currentTime];
+    //for (NSInteger i = 0; i < self.grid.height; i++) {
+      //  for (NSInteger j = 0; j < self.grid.width; j++) {
+       //    SKSpriteNode* node = [self childNodeWithName:[NSString stringWithFormat:@"%d,%d", j, i]];
+       //     iPadTile* tile = [self.grid tileWithX:j Y:i];
+       //     Colour *colour =  tile.tileColour;
+      //      node.color = [[UIColor alloc]initWithRed:colour.red/255.0f green:colour.green/255.0f blue:colour.blue/255.0f alpha:1];
+            
+            
+   
+    //    }
+  //  }
 }
 
+
+- (void)didBeginContact:(SKPhysicsContact *)contact {
+}
 @end

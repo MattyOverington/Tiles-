@@ -7,6 +7,7 @@
 //
 
 #import <SpriteKit/SpriteKit.h>
+#import "iPadBoard.h"
 
 @interface MyScene : SKScene
 
