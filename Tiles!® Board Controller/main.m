@@ -2,8 +2,8 @@
 //  main.m
 //  Tiles!® Board Controller
 //
-//  Created by Matthew Overington on 8/6/14.
-//  Copyright (c) 2014 Matthew Overington. All rights reserved.
+//  Created by Tom Copcutt on 9/22/14.
+//
 //
 
 #import <UIKit/UIKit.h>

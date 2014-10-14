@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4D233021991E2830048E49B"
+               BlueprintIdentifier = "B76F079D19CFD86600F63CBE"
                BuildableName = "Tiles!&#174; Board Controller.app"
                BlueprintName = "Tiles!&#174; Board Controller"
                ReferencedContainer = "container:Tiles!&#174; Board Controller.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "A4D2331D1991E2840048E49B"
+               BlueprintIdentifier = "B76F07C519CFD86700F63CBE"
                BuildableName = "Tiles!&#174; Board ControllerTests.xctest"
                BlueprintName = "Tiles!&#174; Board ControllerTests"
                ReferencedContainer = "container:Tiles!&#174; Board Controller.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4D233021991E2830048E49B"
+            BlueprintIdentifier = "B76F079D19CFD86600F63CBE"
             BuildableName = "Tiles!&#174; Board Controller.app"
             BlueprintName = "Tiles!&#174; Board Controller"
             ReferencedContainer = "container:Tiles!&#174; Board Controller.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4D233021991E2830048E49B"
+            BlueprintIdentifier = "B76F079D19CFD86600F63CBE"
             BuildableName = "Tiles!&#174; Board Controller.app"
             BlueprintName = "Tiles!&#174; Board Controller"
             ReferencedContainer = "container:Tiles!&#174; Board Controller.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "A4D233021991E2830048E49B"
+            BlueprintIdentifier = "B76F079D19CFD86600F63CBE"
             BuildableName = "Tiles!&#174; Board Controller.app"
             BlueprintName = "Tiles!&#174; Board Controller"
             ReferencedContainer = "container:Tiles!&#174; Board Controller.xcodeproj">

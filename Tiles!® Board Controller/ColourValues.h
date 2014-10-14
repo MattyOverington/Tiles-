@@ -6,7 +6,7 @@
 //  Copyright (c) 2014 Matthew Overington. All rights reserved.
 //
 
-#define COLOUR_RED {255, 0 ,0}
+#define COLOUR_RED [255, 0 ,0]
 #define COLOUR_GREEN {0, 255, 0}
 #define COLOUR_BLUE {0, 0, 255}
 #define COLOUR_MAGNETA {255, 0 ,255}

@@ -19,7 +19,8 @@
 @implementation iPadBoard
 - (instancetype)initWithWidth:(NSInteger)width height:(NSInteger)height {
     
-    
+    self.width = width;
+    self.height = height;
     
     self = [super init];
     self.allGridSquares = [[NSMutableArray alloc]init];
@@ -45,14 +46,15 @@
 
 
 -(iPadTile *)tileWithX:(NSInteger)x Y:(NSInteger)y {
-    assert(x > -1);
-    assert(y > -1);
+    //assert(x > -1);
+    //assert(y > -1);
     
-    assert(y < [self.allGridSquares count]);
-    assert(x < [self.allGridSquares count]);
+    //assert(y < [self.allGridSquares count]);
+    //assert(x < [self.allGridSquares count]);
     
     return [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
 };
+
 -(iPadTile*)tileWithPosition:(CGPoint)position {
     assert(position.x > -1);
     assert(position.y > -1);
@@ -102,14 +104,14 @@
 
 - (void)changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger)y2 toColour:(Colour *)c {
     
-    assert(x2 > x1);
-    assert(y2 > y1);
+    //assert(x2 > x1);
+    //assert(y2 > y1);
     
-    assert(x1 > -1);
-    assert(x2 < [self.allGridSquares count]);
+    //assert(x1 > -1);
+    //assert(x2 < [self.allGridSquares count]);
     
-    assert(x1 > -1);
-    assert(x2 < [self.allGridSquares count]);
+    //assert(x1 > -1);
+    //assert(x2 < [self.allGridSquares count]);
     
     NSMutableArray* tilesToChange = [[NSMutableArray alloc] init];
     for (NSInteger i = 0; i < y2 - y1; i++) {
@@ -135,5 +137,12 @@
 }
 
 //time interval method
+-(void)update:(CFTimeInterval)currentTime {
+        [self.game update:currentTime];
+    
+}
+-(void)test {
+    [self.game scroll];
+}
 
 @end

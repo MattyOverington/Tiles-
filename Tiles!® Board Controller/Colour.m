@@ -10,37 +10,29 @@
 
 @interface Colour ()
 
-@property NSInteger r;
-@property NSInteger b;
-@property NSInteger g;
+@property (readwrite)NSInteger red;
+@property (readwrite)NSInteger blue;
+@property (readwrite)NSInteger green;
 
 @end
 
 @implementation Colour
 
-+ (void)initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
++ (Colour*)initWithRed:(NSInteger)red green:(NSInteger)green blue:(NSInteger)blue {
     Colour*c = [[Colour alloc]init];
-    c.r = red;
-    c.g = green;
-    c.b = blue;
+    c.red = red;
+    c.green = green;
+    c.blue = blue;
+    return c;
+    
 }
 
-- (NSInteger)red {
-    return self.r;
-}
-
-- (NSInteger)green {
-    return self.g;
-}
-
-- (NSInteger)blue {
-    return self.b;
-}
-+(void)colourWithPreset:(NSArray *)preset {
++(Colour*)colourWithPreset:(NSArray *)preset {
     Colour*c = [[Colour alloc]init];
-    c.r = [preset objectAtIndex:0];
-    c.g = [preset objectAtIndex:1];
-    c.b = [preset objectAtIndex:2];
+    c.red = [preset objectAtIndex:0];
+    c.green = [preset objectAtIndex:1];
+    c.blue = [preset objectAtIndex:2];
+    return c;
 }
 
 @end

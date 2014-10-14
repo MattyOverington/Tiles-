@@ -7,335 +7,288 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = A433CF6119A2D9F5008C0BA2 /* Device.m */; };
-		A433CF6519A2DA10008C0BA2 /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = A433CF6419A2DA10008C0BA2 /* Bluetooth.m */; };
-		A4499A7719A370DE003B4904 /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = A4499A7619A370DE003B4904 /* Colour.m */; };
-		A475F1BB19A454D1002D3667 /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BA19A454D1002D3667 /* Controller.m */; };
-		A475F1CA19A45F0E002D3667 /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BD19A45F0E002D3667 /* Board.m */; };
-		A475F1CB19A45F0E002D3667 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1BF19A45F0E002D3667 /* Game.m */; };
-		A475F1CC19A45F0E002D3667 /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C119A45F0E002D3667 /* Piece.m */; };
-		A475F1CE19A45F0E002D3667 /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C519A45F0E002D3667 /* Player.m */; };
-		A475F1D019A45F0E002D3667 /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = A475F1C919A45F0E002D3667 /* Tile.m */; };
-		A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A475F1D219A45F77002D3667 /* Storyboard.storyboard */; };
-		A4990C3D19B2E2C100A06BB7 /* GameMenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4990C3C19B2E2C100A06BB7 /* GameMenuViewController.m */; };
-		A4990C4019B2E2DE00A06BB7 /* GameSetupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4990C3F19B2E2DE00A06BB7 /* GameSetupViewController.m */; };
-		A4990C4319B2E2FB00A06BB7 /* GlobalSettingsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A4990C4219B2E2FB00A06BB7 /* GlobalSettingsViewController.m */; };
-		A4AA69AE19A1B07000D88199 /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = A4AA69AD19A1B07000D88199 /* Touch.m */; };
-		A4D233071991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
-		A4D233091991E2840048E49B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233081991E2840048E49B /* CoreGraphics.framework */; };
-		A4D2330B1991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
-		A4D233131991E2840048E49B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D233121991E2840048E49B /* main.m */; };
-		A4D233171991E2840048E49B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D233161991E2840048E49B /* AppDelegate.m */; };
-		A4D233191991E2840048E49B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A4D233181991E2840048E49B /* Images.xcassets */; };
-		A4D233201991E2840048E49B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2331F1991E2840048E49B /* XCTest.framework */; };
-		A4D233211991E2840048E49B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D233061991E2840048E49B /* Foundation.framework */; };
-		A4D233221991E2840048E49B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4D2330A1991E2840048E49B /* UIKit.framework */; };
-		A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */; };
-		B7018D2A19C93EE500736362 /* SpriteAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B7018D2919C93EE500736362 /* SpriteAppDelegate.m */; };
-		B72BC16519C6A34D0035E28F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B72BC16319C6A34D0035E28F /* InfoPlist.strings */; };
-		B72BC16719C6A38F0035E28F /* Tiles!® Board Controller-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B72BC16619C6A38F0035E28F /* Tiles!® Board Controller-Info.plist */; };
-		B7A7C90C19C7CB5A00ADAE16 /* SpriteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B7A7C90B19C7CB5A00ADAE16 /* SpriteViewController.m */; };
-		B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7BC151919B6CBFC00BC0B4A /* PianoTile.m */; };
-		B7F662E519BD68D900B5D2A1 /* SpriteMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */; };
-		B7F662E719BD68F100B5D2A1 /* README.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B7F662E619BD68F100B5D2A1 /* README.rtf */; };
-		B7F662EA19BD69AF00B5D2A1 /* iPadTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662E919BD69AF00B5D2A1 /* iPadTile.m */; };
-		B7F662ED19BD69C500B5D2A1 /* iPadBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B7F662EC19BD69C500B5D2A1 /* iPadBoard.m */; };
+		B76F07A219CFD86600F63CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A119CFD86600F63CBE /* Foundation.framework */; };
+		B76F07A419CFD86600F63CBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A319CFD86600F63CBE /* CoreGraphics.framework */; };
+		B76F07A619CFD86600F63CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A519CFD86600F63CBE /* UIKit.framework */; };
+		B76F07A819CFD86600F63CBE /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A719CFD86600F63CBE /* SpriteKit.framework */; };
+		B76F07AE19CFD86600F63CBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B76F07AC19CFD86600F63CBE /* InfoPlist.strings */; };
+		B76F07B019CFD86600F63CBE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07AF19CFD86600F63CBE /* main.m */; };
+		B76F07B419CFD86600F63CBE /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07B319CFD86600F63CBE /* AppDelegate.m */; };
+		B76F07B719CFD86600F63CBE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B76F07B519CFD86600F63CBE /* Main.storyboard */; };
+		B76F07BA19CFD86700F63CBE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07B919CFD86700F63CBE /* ViewController.m */; };
+		B76F07BD19CFD86700F63CBE /* MyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07BC19CFD86700F63CBE /* MyScene.m */; };
+		B76F07BF19CFD86700F63CBE /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = B76F07BE19CFD86700F63CBE /* Spaceship.png */; };
+		B76F07C119CFD86700F63CBE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B76F07C019CFD86700F63CBE /* Images.xcassets */; };
+		B76F07C819CFD86700F63CBE /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07C719CFD86700F63CBE /* XCTest.framework */; };
+		B76F07C919CFD86700F63CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A119CFD86600F63CBE /* Foundation.framework */; };
+		B76F07CA19CFD86700F63CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A519CFD86600F63CBE /* UIKit.framework */; };
+		B76F07D219CFD86700F63CBE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B76F07D019CFD86700F63CBE /* InfoPlist.strings */; };
+		B76F07D419CFD86700F63CBE /* Tiles___Board_ControllerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07D319CFD86700F63CBE /* Tiles___Board_ControllerTests.m */; };
+		B76F07E119CFD8AB00F63CBE /* iPadTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07DE19CFD8AB00F63CBE /* iPadTile.m */; };
+		B76F07E219CFD8AB00F63CBE /* iPadBoard.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07E019CFD8AB00F63CBE /* iPadBoard.m */; };
+		B76F07EC19CFD91900F63CBE /* Touch.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07E619CFD91900F63CBE /* Touch.m */; };
+		B76F07ED19CFD91900F63CBE /* Colour.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07E819CFD91900F63CBE /* Colour.m */; };
+		B76F07EE19CFD91900F63CBE /* Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07EA19CFD91900F63CBE /* Controller.m */; };
+		B76F07F419CFD93600F63CBE /* Piece.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07F119CFD93600F63CBE /* Piece.m */; };
+		B76F07F519CFD93600F63CBE /* Player.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07F319CFD93600F63CBE /* Player.m */; };
+		B76F07FB19CFD95100F63CBE /* Tile.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07F819CFD95100F63CBE /* Tile.m */; };
+		B76F07FC19CFD95100F63CBE /* Board.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F07FA19CFD95100F63CBE /* Board.m */; };
+		B76F080119CFD97700F63CBE /* PianoTile.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080019CFD97700F63CBE /* PianoTile.m */; };
+		B76F080619CFD98900F63CBE /* Device.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080319CFD98900F63CBE /* Device.m */; };
+		B76F080719CFD98900F63CBE /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080519CFD98900F63CBE /* Bluetooth.m */; };
+		B76F080A19CFD99D00F63CBE /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080919CFD99D00F63CBE /* Game.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A4D233231991E2840048E49B /* PBXContainerItemProxy */ = {
+		B76F07CB19CFD86700F63CBE /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A4D232FB1991E2830048E49B /* Project object */;
+			containerPortal = B76F079619CFD86600F63CBE /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = A4D233021991E2830048E49B;
+			remoteGlobalIDString = B76F079D19CFD86600F63CBE;
 			remoteInfo = "Tiles!® Board Controller";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		A433CF6019A2D9F5008C0BA2 /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
-		A433CF6119A2D9F5008C0BA2 /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
-		A433CF6319A2DA10008C0BA2 /* Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
-		A433CF6419A2DA10008C0BA2 /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
-		A4499A7519A370DE003B4904 /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
-		A4499A7619A370DE003B4904 /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
-		A475F1B919A454D1002D3667 /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
-		A475F1BA19A454D1002D3667 /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
-		A475F1BC19A45F0E002D3667 /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
-		A475F1BD19A45F0E002D3667 /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
-		A475F1BE19A45F0E002D3667 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
-		A475F1BF19A45F0E002D3667 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
-		A475F1C019A45F0E002D3667 /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
-		A475F1C119A45F0E002D3667 /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
-		A475F1C419A45F0E002D3667 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
-		A475F1C519A45F0E002D3667 /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
-		A475F1C819A45F0E002D3667 /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
-		A475F1C919A45F0E002D3667 /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
-		A475F1D219A45F77002D3667 /* Storyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Storyboard.storyboard; sourceTree = "<group>"; };
-		A480019019B42DFB00611CD1 /* ColourValues.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ColourValues.h; sourceTree = "<group>"; };
-		A4990C3B19B2E2C100A06BB7 /* GameMenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameMenuViewController.h; sourceTree = "<group>"; };
-		A4990C3C19B2E2C100A06BB7 /* GameMenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameMenuViewController.m; sourceTree = "<group>"; };
-		A4990C3E19B2E2DE00A06BB7 /* GameSetupViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameSetupViewController.h; sourceTree = "<group>"; };
-		A4990C3F19B2E2DE00A06BB7 /* GameSetupViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSetupViewController.m; sourceTree = "<group>"; };
-		A4990C4119B2E2FB00A06BB7 /* GlobalSettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GlobalSettingsViewController.h; sourceTree = "<group>"; };
-		A4990C4219B2E2FB00A06BB7 /* GlobalSettingsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GlobalSettingsViewController.m; sourceTree = "<group>"; };
-		A4AA69AC19A1B07000D88199 /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
-		A4AA69AD19A1B07000D88199 /* Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
-		A4D233031991E2840048E49B /* Tiles!® Board Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiles!® Board Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D233061991E2840048E49B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		A4D233081991E2840048E49B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		A4D2330A1991E2840048E49B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		A4D2330E1991E2840048E49B /* Tiles!® Board Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board Controller-Info.plist"; sourceTree = "<group>"; };
-		A4D233121991E2840048E49B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		A4D233141991E2840048E49B /* Tiles!® Board Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiles!® Board Controller-Prefix.pch"; sourceTree = "<group>"; };
-		A4D233151991E2840048E49B /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		A4D233161991E2840048E49B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		A4D233181991E2840048E49B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiles!® Board ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A4D2331F1991E2840048E49B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
-		B7018D2819C93EE500736362 /* SpriteAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteAppDelegate.h; sourceTree = "<group>"; };
-		B7018D2919C93EE500736362 /* SpriteAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteAppDelegate.m; sourceTree = "<group>"; };
-		B72BC16419C6A34D0035E28F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		B72BC16619C6A38F0035E28F /* Tiles!® Board Controller-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "Tiles!® Board Controller-Info.plist"; sourceTree = "<group>"; };
-		B7A7C90A19C7CB5A00ADAE16 /* SpriteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteViewController.h; sourceTree = "<group>"; };
-		B7A7C90B19C7CB5A00ADAE16 /* SpriteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteViewController.m; sourceTree = "<group>"; };
-		B7BC151819B6CBFC00BC0B4A /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
-		B7BC151919B6CBFC00BC0B4A /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
-		B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SpriteMyScene.h; sourceTree = "<group>"; };
-		B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SpriteMyScene.m; sourceTree = "<group>"; };
-		B7F662E619BD68F100B5D2A1 /* README.rtf */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.rtf; path = README.rtf; sourceTree = "<group>"; };
-		B7F662E819BD69AF00B5D2A1 /* iPadTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadTile.h; sourceTree = "<group>"; };
-		B7F662E919BD69AF00B5D2A1 /* iPadTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadTile.m; sourceTree = "<group>"; };
-		B7F662EB19BD69C500B5D2A1 /* iPadBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadBoard.h; sourceTree = "<group>"; };
-		B7F662EC19BD69C500B5D2A1 /* iPadBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadBoard.m; sourceTree = "<group>"; };
+		B76F079E19CFD86600F63CBE /* Tiles!® Board Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiles!® Board Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76F07A119CFD86600F63CBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		B76F07A319CFD86600F63CBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		B76F07A519CFD86600F63CBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		B76F07A719CFD86600F63CBE /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		B76F07AB19CFD86600F63CBE /* Tiles!® Board Controller-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board Controller-Info.plist"; sourceTree = "<group>"; };
+		B76F07AD19CFD86600F63CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B76F07AF19CFD86600F63CBE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		B76F07B119CFD86600F63CBE /* Tiles!® Board Controller-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tiles!® Board Controller-Prefix.pch"; sourceTree = "<group>"; };
+		B76F07B219CFD86600F63CBE /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		B76F07B319CFD86600F63CBE /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		B76F07B619CFD86600F63CBE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B76F07B819CFD86600F63CBE /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		B76F07B919CFD86700F63CBE /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		B76F07BB19CFD86700F63CBE /* MyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MyScene.h; sourceTree = "<group>"; };
+		B76F07BC19CFD86700F63CBE /* MyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MyScene.m; sourceTree = "<group>"; };
+		B76F07BE19CFD86700F63CBE /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		B76F07C019CFD86700F63CBE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		B76F07C619CFD86700F63CBE /* Tiles!® Board ControllerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tiles!® Board ControllerTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B76F07C719CFD86700F63CBE /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		B76F07CF19CFD86700F63CBE /* Tiles!® Board ControllerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Tiles!® Board ControllerTests-Info.plist"; sourceTree = "<group>"; };
+		B76F07D119CFD86700F63CBE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B76F07D319CFD86700F63CBE /* Tiles___Board_ControllerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Tiles___Board_ControllerTests.m"; sourceTree = "<group>"; };
+		B76F07DD19CFD8AB00F63CBE /* iPadTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadTile.h; sourceTree = "<group>"; };
+		B76F07DE19CFD8AB00F63CBE /* iPadTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadTile.m; sourceTree = "<group>"; };
+		B76F07DF19CFD8AB00F63CBE /* iPadBoard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iPadBoard.h; sourceTree = "<group>"; };
+		B76F07E019CFD8AB00F63CBE /* iPadBoard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iPadBoard.m; sourceTree = "<group>"; };
+		B76F07E519CFD91900F63CBE /* Touch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Touch.h; sourceTree = "<group>"; };
+		B76F07E619CFD91900F63CBE /* Touch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Touch.m; sourceTree = "<group>"; };
+		B76F07E719CFD91900F63CBE /* Colour.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Colour.h; sourceTree = "<group>"; };
+		B76F07E819CFD91900F63CBE /* Colour.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Colour.m; sourceTree = "<group>"; };
+		B76F07E919CFD91900F63CBE /* Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Controller.h; sourceTree = "<group>"; };
+		B76F07EA19CFD91900F63CBE /* Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Controller.m; sourceTree = "<group>"; };
+		B76F07EB19CFD91900F63CBE /* ColourValues.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ColourValues.h; sourceTree = "<group>"; };
+		B76F07F019CFD93600F63CBE /* Piece.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Piece.h; sourceTree = "<group>"; };
+		B76F07F119CFD93600F63CBE /* Piece.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Piece.m; sourceTree = "<group>"; };
+		B76F07F219CFD93600F63CBE /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Player.h; sourceTree = "<group>"; };
+		B76F07F319CFD93600F63CBE /* Player.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Player.m; sourceTree = "<group>"; };
+		B76F07F719CFD95100F63CBE /* Tile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tile.h; sourceTree = "<group>"; };
+		B76F07F819CFD95100F63CBE /* Tile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tile.m; sourceTree = "<group>"; };
+		B76F07F919CFD95100F63CBE /* Board.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Board.h; sourceTree = "<group>"; };
+		B76F07FA19CFD95100F63CBE /* Board.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Board.m; sourceTree = "<group>"; };
+		B76F07FF19CFD97700F63CBE /* PianoTile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PianoTile.h; sourceTree = "<group>"; };
+		B76F080019CFD97700F63CBE /* PianoTile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PianoTile.m; sourceTree = "<group>"; };
+		B76F080219CFD98900F63CBE /* Device.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Device.h; sourceTree = "<group>"; };
+		B76F080319CFD98900F63CBE /* Device.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Device.m; sourceTree = "<group>"; };
+		B76F080419CFD98900F63CBE /* Bluetooth.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Bluetooth.h; sourceTree = "<group>"; };
+		B76F080519CFD98900F63CBE /* Bluetooth.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bluetooth.m; sourceTree = "<group>"; };
+		B76F080819CFD99D00F63CBE /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		B76F080919CFD99D00F63CBE /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		A4D233001991E2830048E49B /* Frameworks */ = {
+		B76F079B19CFD86600F63CBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D233091991E2840048E49B /* CoreGraphics.framework in Frameworks */,
-				A4D2330B1991E2840048E49B /* UIKit.framework in Frameworks */,
-				A4D233071991E2840048E49B /* Foundation.framework in Frameworks */,
+				B76F07A419CFD86600F63CBE /* CoreGraphics.framework in Frameworks */,
+				B76F07A619CFD86600F63CBE /* UIKit.framework in Frameworks */,
+				B76F07A819CFD86600F63CBE /* SpriteKit.framework in Frameworks */,
+				B76F07A219CFD86600F63CBE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4D2331B1991E2840048E49B /* Frameworks */ = {
+		B76F07C319CFD86700F63CBE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D233201991E2840048E49B /* XCTest.framework in Frameworks */,
-				A4D233221991E2840048E49B /* UIKit.framework in Frameworks */,
-				A4D233211991E2840048E49B /* Foundation.framework in Frameworks */,
+				B76F07C819CFD86700F63CBE /* XCTest.framework in Frameworks */,
+				B76F07CA19CFD86700F63CBE /* UIKit.framework in Frameworks */,
+				B76F07C919CFD86700F63CBE /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		A433CF5D19A2D940008C0BA2 /* Bluetooth */ = {
+		B76F079519CFD86600F63CBE = {
 			isa = PBXGroup;
 			children = (
-				A433CF6019A2D9F5008C0BA2 /* Device.h */,
-				A433CF6119A2D9F5008C0BA2 /* Device.m */,
-				A433CF6319A2DA10008C0BA2 /* Bluetooth.h */,
-				A433CF6419A2DA10008C0BA2 /* Bluetooth.m */,
-			);
-			name = Bluetooth;
-			sourceTree = "<group>";
-		};
-		A433CF5E19A2D949008C0BA2 /* UI */ = {
-			isa = PBXGroup;
-			children = (
-				A475F1D219A45F77002D3667 /* Storyboard.storyboard */,
-				A4990C3B19B2E2C100A06BB7 /* GameMenuViewController.h */,
-				A4990C3C19B2E2C100A06BB7 /* GameMenuViewController.m */,
-				A4990C3E19B2E2DE00A06BB7 /* GameSetupViewController.h */,
-				A4990C3F19B2E2DE00A06BB7 /* GameSetupViewController.m */,
-				A4990C4119B2E2FB00A06BB7 /* GlobalSettingsViewController.h */,
-				A4990C4219B2E2FB00A06BB7 /* GlobalSettingsViewController.m */,
-			);
-			name = UI;
-			sourceTree = "<group>";
-		};
-		A433CF5F19A2D94F008C0BA2 /* API  */ = {
-			isa = PBXGroup;
-			children = (
-				A4AA69AC19A1B07000D88199 /* Touch.h */,
-				A4AA69AD19A1B07000D88199 /* Touch.m */,
-				A4499A7519A370DE003B4904 /* Colour.h */,
-				A4499A7619A370DE003B4904 /* Colour.m */,
-				A475F1B919A454D1002D3667 /* Controller.h */,
-				A475F1BA19A454D1002D3667 /* Controller.m */,
-				A480019019B42DFB00611CD1 /* ColourValues.h */,
-			);
-			name = "API ";
-			sourceTree = "<group>";
-		};
-		A475F1D119A45F17002D3667 /* ADT */ = {
-			isa = PBXGroup;
-			children = (
-				A475F1BE19A45F0E002D3667 /* Game.h */,
-				A475F1BF19A45F0E002D3667 /* Game.m */,
-				A4C8714D19AC16DE0008A603 /* Board & Tile */,
-				A4C8714E19AC16F10008A603 /* Pieces & Player */,
-			);
-			name = ADT;
-			sourceTree = "<group>";
-		};
-		A4990C3A19B2E25B00A06BB7 /* Framework, Bluetooth & UI */ = {
-			isa = PBXGroup;
-			children = (
-				A433CF5D19A2D940008C0BA2 /* Bluetooth */,
-				A433CF5E19A2D949008C0BA2 /* UI */,
-				A433CF5F19A2D94F008C0BA2 /* API  */,
-				A475F1D119A45F17002D3667 /* ADT */,
-			);
-			name = "Framework, Bluetooth & UI";
-			sourceTree = "<group>";
-		};
-		A4990C4419B2E47E00A06BB7 /* Games */ = {
-			isa = PBXGroup;
-			children = (
-				B7BC151B19B6CC0700BC0B4A /* Piano Tiles */,
-			);
-			name = Games;
-			sourceTree = "<group>";
-		};
-		A4C8714D19AC16DE0008A603 /* Board & Tile */ = {
-			isa = PBXGroup;
-			children = (
-				A475F1C819A45F0E002D3667 /* Tile.h */,
-				A475F1C919A45F0E002D3667 /* Tile.m */,
-				A475F1BC19A45F0E002D3667 /* Board.h */,
-				A475F1BD19A45F0E002D3667 /* Board.m */,
-			);
-			name = "Board & Tile";
-			sourceTree = "<group>";
-		};
-		A4C8714E19AC16F10008A603 /* Pieces & Player */ = {
-			isa = PBXGroup;
-			children = (
-				A475F1C019A45F0E002D3667 /* Piece.h */,
-				A475F1C119A45F0E002D3667 /* Piece.m */,
-				A475F1C419A45F0E002D3667 /* Player.h */,
-				A475F1C519A45F0E002D3667 /* Player.m */,
-			);
-			name = "Pieces & Player";
-			sourceTree = "<group>";
-		};
-		A4D232FA1991E2830048E49B = {
-			isa = PBXGroup;
-			children = (
-				A4D2330C1991E2840048E49B /* Tiles!® Board Controller */,
-				A4D233251991E2840048E49B /* Tiles!® Board ControllerTests */,
-				A4D233051991E2840048E49B /* Frameworks */,
-				A4D233041991E2840048E49B /* Products */,
-				A4D2330D1991E2840048E49B /* Supporting Files */,
+				B76F07A919CFD86600F63CBE /* Tiles!® Board Controller */,
+				B76F07CD19CFD86700F63CBE /* Tiles!® Board ControllerTests */,
+				B76F07A019CFD86600F63CBE /* Frameworks */,
+				B76F079F19CFD86600F63CBE /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		A4D233041991E2840048E49B /* Products */ = {
+		B76F079F19CFD86600F63CBE /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A4D233031991E2840048E49B /* Tiles!® Board Controller.app */,
-				A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */,
+				B76F079E19CFD86600F63CBE /* Tiles!® Board Controller.app */,
+				B76F07C619CFD86700F63CBE /* Tiles!® Board ControllerTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		A4D233051991E2840048E49B /* Frameworks */ = {
+		B76F07A019CFD86600F63CBE /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				A4D233061991E2840048E49B /* Foundation.framework */,
-				A4D233081991E2840048E49B /* CoreGraphics.framework */,
-				A4D2330A1991E2840048E49B /* UIKit.framework */,
-				A4D2331F1991E2840048E49B /* XCTest.framework */,
+				B76F07A119CFD86600F63CBE /* Foundation.framework */,
+				B76F07A319CFD86600F63CBE /* CoreGraphics.framework */,
+				B76F07A519CFD86600F63CBE /* UIKit.framework */,
+				B76F07A719CFD86600F63CBE /* SpriteKit.framework */,
+				B76F07C719CFD86700F63CBE /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		A4D2330C1991E2840048E49B /* Tiles!® Board Controller */ = {
+		B76F07A919CFD86600F63CBE /* Tiles!® Board Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B7F662DC19BD684900B5D2A1 /* iPad independant stuff. */,
-				A4990C4419B2E47E00A06BB7 /* Games */,
-				A4990C3A19B2E25B00A06BB7 /* Framework, Bluetooth & UI */,
+				B76F07BB19CFD86700F63CBE /* MyScene.h */,
+				B76F07BC19CFD86700F63CBE /* MyScene.m */,
+				B7FF9FBE19D27F8500B13C95 /* IPAD BOARD AND TILES */,
+				B76F07FD19CFD96600F63CBE /* Games */,
+				B76F07F619CFD94500F63CBE /* Board and tiles */,
+				B76F07EF19CFD92A00F63CBE /* Piece and player */,
+				B76F07E419CFD90D00F63CBE /* API */,
+				B76F080219CFD98900F63CBE /* Device.h */,
+				B76F080319CFD98900F63CBE /* Device.m */,
+				B76F080419CFD98900F63CBE /* Bluetooth.h */,
+				B76F080519CFD98900F63CBE /* Bluetooth.m */,
+				B76F07B219CFD86600F63CBE /* AppDelegate.h */,
+				B76F07B319CFD86600F63CBE /* AppDelegate.m */,
+				B76F07B519CFD86600F63CBE /* Main.storyboard */,
+				B76F07B819CFD86600F63CBE /* ViewController.h */,
+				B76F07B919CFD86700F63CBE /* ViewController.m */,
+				B76F07BE19CFD86700F63CBE /* Spaceship.png */,
+				B76F07C019CFD86700F63CBE /* Images.xcassets */,
+				B76F07AA19CFD86600F63CBE /* Supporting Files */,
 			);
 			path = "Tiles!® Board Controller";
 			sourceTree = "<group>";
 		};
-		A4D2330D1991E2840048E49B /* Supporting Files */ = {
+		B76F07AA19CFD86600F63CBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				A4D233151991E2840048E49B /* AppDelegate.h */,
-				A4D233161991E2840048E49B /* AppDelegate.m */,
-				A4D233181991E2840048E49B /* Images.xcassets */,
-				A4D2330E1991E2840048E49B /* Tiles!® Board Controller-Info.plist */,
-				A4D233121991E2840048E49B /* main.m */,
-				A4D233141991E2840048E49B /* Tiles!® Board Controller-Prefix.pch */,
+				B76F07AB19CFD86600F63CBE /* Tiles!® Board Controller-Info.plist */,
+				B76F07AC19CFD86600F63CBE /* InfoPlist.strings */,
+				B76F07AF19CFD86600F63CBE /* main.m */,
+				B76F07B119CFD86600F63CBE /* Tiles!® Board Controller-Prefix.pch */,
 			);
 			name = "Supporting Files";
-			path = "Tiles!® Board Controller";
 			sourceTree = "<group>";
 		};
-		A4D233251991E2840048E49B /* Tiles!® Board ControllerTests */ = {
+		B76F07CD19CFD86700F63CBE /* Tiles!® Board ControllerTests */ = {
 			isa = PBXGroup;
 			children = (
-				A4D2332B1991E2840048E49B /* Tiles___Board_ControllerTests.m */,
-				B72BC16619C6A38F0035E28F /* Tiles!® Board Controller-Info.plist */,
-				A4D233261991E2840048E49B /* Supporting Files */,
+				B76F07D319CFD86700F63CBE /* Tiles___Board_ControllerTests.m */,
+				B76F07CE19CFD86700F63CBE /* Supporting Files */,
 			);
 			path = "Tiles!® Board ControllerTests";
 			sourceTree = "<group>";
 		};
-		A4D233261991E2840048E49B /* Supporting Files */ = {
+		B76F07CE19CFD86700F63CBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				B72BC16319C6A34D0035E28F /* InfoPlist.strings */,
+				B76F07CF19CFD86700F63CBE /* Tiles!® Board ControllerTests-Info.plist */,
+				B76F07D019CFD86700F63CBE /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		B7BC151B19B6CC0700BC0B4A /* Piano Tiles */ = {
+		B76F07E419CFD90D00F63CBE /* API */ = {
 			isa = PBXGroup;
 			children = (
-				B7BC151819B6CBFC00BC0B4A /* PianoTile.h */,
-				B7BC151919B6CBFC00BC0B4A /* PianoTile.m */,
+				B76F07E519CFD91900F63CBE /* Touch.h */,
+				B76F07E619CFD91900F63CBE /* Touch.m */,
+				B76F07E719CFD91900F63CBE /* Colour.h */,
+				B76F07E819CFD91900F63CBE /* Colour.m */,
+				B76F07EB19CFD91900F63CBE /* ColourValues.h */,
+				B76F07E919CFD91900F63CBE /* Controller.h */,
+				B76F07EA19CFD91900F63CBE /* Controller.m */,
+				B76F080819CFD99D00F63CBE /* Game.h */,
+				B76F080919CFD99D00F63CBE /* Game.m */,
 			);
-			name = "Piano Tiles";
+			name = API;
 			sourceTree = "<group>";
 		};
-		B7F662DC19BD684900B5D2A1 /* iPad independant stuff. */ = {
+		B76F07EF19CFD92A00F63CBE /* Piece and player */ = {
 			isa = PBXGroup;
 			children = (
-				B7018D2819C93EE500736362 /* SpriteAppDelegate.h */,
-				B7018D2919C93EE500736362 /* SpriteAppDelegate.m */,
-				B7A7C90A19C7CB5A00ADAE16 /* SpriteViewController.h */,
-				B7A7C90B19C7CB5A00ADAE16 /* SpriteViewController.m */,
-				B7F662E319BD68D900B5D2A1 /* SpriteMyScene.h */,
-				B7F662E419BD68D900B5D2A1 /* SpriteMyScene.m */,
-				B7F662E819BD69AF00B5D2A1 /* iPadTile.h */,
-				B7F662E919BD69AF00B5D2A1 /* iPadTile.m */,
-				B7F662EB19BD69C500B5D2A1 /* iPadBoard.h */,
-				B7F662EC19BD69C500B5D2A1 /* iPadBoard.m */,
-				B7F662E619BD68F100B5D2A1 /* README.rtf */,
+				B76F07F019CFD93600F63CBE /* Piece.h */,
+				B76F07F119CFD93600F63CBE /* Piece.m */,
+				B76F07F219CFD93600F63CBE /* Player.h */,
+				B76F07F319CFD93600F63CBE /* Player.m */,
 			);
-			name = "iPad independant stuff.";
+			name = "Piece and player";
+			sourceTree = "<group>";
+		};
+		B76F07F619CFD94500F63CBE /* Board and tiles */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07F719CFD95100F63CBE /* Tile.h */,
+				B76F07F819CFD95100F63CBE /* Tile.m */,
+				B76F07F919CFD95100F63CBE /* Board.h */,
+				B76F07FA19CFD95100F63CBE /* Board.m */,
+			);
+			name = "Board and tiles";
+			sourceTree = "<group>";
+		};
+		B76F07FD19CFD96600F63CBE /* Games */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07FE19CFD96B00F63CBE /* Piano tiles */,
+			);
+			name = Games;
+			sourceTree = "<group>";
+		};
+		B76F07FE19CFD96B00F63CBE /* Piano tiles */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07FF19CFD97700F63CBE /* PianoTile.h */,
+				B76F080019CFD97700F63CBE /* PianoTile.m */,
+			);
+			name = "Piano tiles";
+			sourceTree = "<group>";
+		};
+		B7FF9FBE19D27F8500B13C95 /* IPAD BOARD AND TILES */ = {
+			isa = PBXGroup;
+			children = (
+				B76F07DD19CFD8AB00F63CBE /* iPadTile.h */,
+				B76F07DE19CFD8AB00F63CBE /* iPadTile.m */,
+				B76F07DF19CFD8AB00F63CBE /* iPadBoard.h */,
+				B76F07E019CFD8AB00F63CBE /* iPadBoard.m */,
+			);
+			name = "IPAD BOARD AND TILES";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		A4D233021991E2830048E49B /* Tiles!® Board Controller */ = {
+		B76F079D19CFD86600F63CBE /* Tiles!® Board Controller */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4D2332F1991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board Controller" */;
+			buildConfigurationList = B76F07D719CFD86700F63CBE /* Build configuration list for PBXNativeTarget "Tiles!® Board Controller" */;
 			buildPhases = (
-				A4D232FF1991E2830048E49B /* Sources */,
-				A4D233001991E2830048E49B /* Frameworks */,
-				A4D233011991E2830048E49B /* Resources */,
+				B76F079A19CFD86600F63CBE /* Sources */,
+				B76F079B19CFD86600F63CBE /* Frameworks */,
+				B76F079C19CFD86600F63CBE /* Resources */,
 			);
 			buildRules = (
 			);
@@ -343,133 +296,145 @@
 			);
 			name = "Tiles!® Board Controller";
 			productName = "Tiles!® Board Controller";
-			productReference = A4D233031991E2840048E49B /* Tiles!® Board Controller.app */;
+			productReference = B76F079E19CFD86600F63CBE /* Tiles!® Board Controller.app */;
 			productType = "com.apple.product-type.application";
 		};
-		A4D2331D1991E2840048E49B /* Tiles!® Board ControllerTests */ = {
+		B76F07C519CFD86700F63CBE /* Tiles!® Board ControllerTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = A4D233321991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */;
+			buildConfigurationList = B76F07DA19CFD86700F63CBE /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */;
 			buildPhases = (
-				A4D2331A1991E2840048E49B /* Sources */,
-				A4D2331B1991E2840048E49B /* Frameworks */,
-				A4D2331C1991E2840048E49B /* Resources */,
+				B76F07C219CFD86700F63CBE /* Sources */,
+				B76F07C319CFD86700F63CBE /* Frameworks */,
+				B76F07C419CFD86700F63CBE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				A4D233241991E2840048E49B /* PBXTargetDependency */,
+				B76F07CC19CFD86700F63CBE /* PBXTargetDependency */,
 			);
 			name = "Tiles!® Board ControllerTests";
 			productName = "Tiles!® Board ControllerTests";
-			productReference = A4D2331E1991E2840048E49B /* Tiles!® Board ControllerTests.xctest */;
+			productReference = B76F07C619CFD86700F63CBE /* Tiles!® Board ControllerTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		A4D232FB1991E2830048E49B /* Project object */ = {
+		B76F079619CFD86600F63CBE /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Matthew Overington";
 				TargetAttributes = {
-					A4D2331D1991E2840048E49B = {
-						TestTargetID = A4D233021991E2830048E49B;
+					B76F07C519CFD86700F63CBE = {
+						TestTargetID = B76F079D19CFD86600F63CBE;
 					};
 				};
 			};
-			buildConfigurationList = A4D232FE1991E2830048E49B /* Build configuration list for PBXProject "Tiles!® Board Controller" */;
+			buildConfigurationList = B76F079919CFD86600F63CBE /* Build configuration list for PBXProject "Tiles!® Board Controller" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
-			mainGroup = A4D232FA1991E2830048E49B;
-			productRefGroup = A4D233041991E2840048E49B /* Products */;
+			mainGroup = B76F079519CFD86600F63CBE;
+			productRefGroup = B76F079F19CFD86600F63CBE /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				A4D233021991E2830048E49B /* Tiles!® Board Controller */,
-				A4D2331D1991E2840048E49B /* Tiles!® Board ControllerTests */,
+				B76F079D19CFD86600F63CBE /* Tiles!® Board Controller */,
+				B76F07C519CFD86700F63CBE /* Tiles!® Board ControllerTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A4D233011991E2830048E49B /* Resources */ = {
+		B76F079C19CFD86600F63CBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D233191991E2840048E49B /* Images.xcassets in Resources */,
-				B7F662E719BD68F100B5D2A1 /* README.rtf in Resources */,
-				A475F1D319A45F77002D3667 /* Storyboard.storyboard in Resources */,
+				B76F07AE19CFD86600F63CBE /* InfoPlist.strings in Resources */,
+				B76F07C119CFD86700F63CBE /* Images.xcassets in Resources */,
+				B76F07BF19CFD86700F63CBE /* Spaceship.png in Resources */,
+				B76F07B719CFD86600F63CBE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4D2331C1991E2840048E49B /* Resources */ = {
+		B76F07C419CFD86700F63CBE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B72BC16719C6A38F0035E28F /* Tiles!® Board Controller-Info.plist in Resources */,
-				B72BC16519C6A34D0035E28F /* InfoPlist.strings in Resources */,
+				B76F07D219CFD86700F63CBE /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		A4D232FF1991E2830048E49B /* Sources */ = {
+		B76F079A19CFD86600F63CBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A475F1CB19A45F0E002D3667 /* Game.m in Sources */,
-				A433CF6519A2DA10008C0BA2 /* Bluetooth.m in Sources */,
-				A475F1CC19A45F0E002D3667 /* Piece.m in Sources */,
-				A475F1CE19A45F0E002D3667 /* Player.m in Sources */,
-				A475F1D019A45F0E002D3667 /* Tile.m in Sources */,
-				A4D233171991E2840048E49B /* AppDelegate.m in Sources */,
-				B7F662E519BD68D900B5D2A1 /* SpriteMyScene.m in Sources */,
-				A4990C4019B2E2DE00A06BB7 /* GameSetupViewController.m in Sources */,
-				A4990C3D19B2E2C100A06BB7 /* GameMenuViewController.m in Sources */,
-				B7F662ED19BD69C500B5D2A1 /* iPadBoard.m in Sources */,
-				B7F662EA19BD69AF00B5D2A1 /* iPadTile.m in Sources */,
-				A475F1CA19A45F0E002D3667 /* Board.m in Sources */,
-				A4AA69AE19A1B07000D88199 /* Touch.m in Sources */,
-				B7018D2A19C93EE500736362 /* SpriteAppDelegate.m in Sources */,
-				A4D233131991E2840048E49B /* main.m in Sources */,
-				B7BC151A19B6CBFC00BC0B4A /* PianoTile.m in Sources */,
-				B7A7C90C19C7CB5A00ADAE16 /* SpriteViewController.m in Sources */,
-				A433CF6219A2D9F5008C0BA2 /* Device.m in Sources */,
-				A475F1BB19A454D1002D3667 /* Controller.m in Sources */,
-				A4990C4319B2E2FB00A06BB7 /* GlobalSettingsViewController.m in Sources */,
-				A4499A7719A370DE003B4904 /* Colour.m in Sources */,
+				B76F080A19CFD99D00F63CBE /* Game.m in Sources */,
+				B76F07BD19CFD86700F63CBE /* MyScene.m in Sources */,
+				B76F07EC19CFD91900F63CBE /* Touch.m in Sources */,
+				B76F07F419CFD93600F63CBE /* Piece.m in Sources */,
+				B76F080619CFD98900F63CBE /* Device.m in Sources */,
+				B76F07EE19CFD91900F63CBE /* Controller.m in Sources */,
+				B76F07E119CFD8AB00F63CBE /* iPadTile.m in Sources */,
+				B76F07BA19CFD86700F63CBE /* ViewController.m in Sources */,
+				B76F07F519CFD93600F63CBE /* Player.m in Sources */,
+				B76F07FB19CFD95100F63CBE /* Tile.m in Sources */,
+				B76F07B419CFD86600F63CBE /* AppDelegate.m in Sources */,
+				B76F07E219CFD8AB00F63CBE /* iPadBoard.m in Sources */,
+				B76F07B019CFD86600F63CBE /* main.m in Sources */,
+				B76F080719CFD98900F63CBE /* Bluetooth.m in Sources */,
+				B76F07ED19CFD91900F63CBE /* Colour.m in Sources */,
+				B76F07FC19CFD95100F63CBE /* Board.m in Sources */,
+				B76F080119CFD97700F63CBE /* PianoTile.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A4D2331A1991E2840048E49B /* Sources */ = {
+		B76F07C219CFD86700F63CBE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4D2332C1991E2840048E49B /* Tiles___Board_ControllerTests.m in Sources */,
+				B76F07D419CFD86700F63CBE /* Tiles___Board_ControllerTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A4D233241991E2840048E49B /* PBXTargetDependency */ = {
+		B76F07CC19CFD86700F63CBE /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = A4D233021991E2830048E49B /* Tiles!® Board Controller */;
-			targetProxy = A4D233231991E2840048E49B /* PBXContainerItemProxy */;
+			target = B76F079D19CFD86600F63CBE /* Tiles!® Board Controller */;
+			targetProxy = B76F07CB19CFD86700F63CBE /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		B72BC16319C6A34D0035E28F /* InfoPlist.strings */ = {
+		B76F07AC19CFD86600F63CBE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				B72BC16419C6A34D0035E28F /* en */,
+				B76F07AD19CFD86600F63CBE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B76F07B519CFD86600F63CBE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B76F07B619CFD86600F63CBE /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B76F07D019CFD86700F63CBE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B76F07D119CFD86700F63CBE /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -477,7 +442,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		A4D2332D1991E2840048E49B /* Debug */ = {
+		B76F07D519CFD86700F63CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -513,10 +478,11 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
-		A4D2332E1991E2840048E49B /* Release */ = {
+		B76F07D619CFD86700F63CBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -545,11 +511,12 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A4D233301991E2840048E49B /* Debug */ = {
+		B76F07D819CFD86700F63CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -557,13 +524,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tiles!® Board Controller/Tiles!® Board Controller-Prefix.pch";
 				INFOPLIST_FILE = "Tiles!® Board Controller/Tiles!® Board Controller-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
 		};
-		A4D233311991E2840048E49B /* Release */ = {
+		B76F07D919CFD86700F63CBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -571,13 +538,13 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Tiles!® Board Controller/Tiles!® Board Controller-Prefix.pch";
 				INFOPLIST_FILE = "Tiles!® Board Controller/Tiles!® Board Controller-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
 		};
-		A4D233331991E2840048E49B /* Debug */ = {
+		B76F07DB19CFD86700F63CBE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -600,7 +567,7 @@
 			};
 			name = Debug;
 		};
-		A4D233341991E2840048E49B /* Release */ = {
+		B76F07DC19CFD86700F63CBE /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
@@ -622,34 +589,34 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		A4D232FE1991E2830048E49B /* Build configuration list for PBXProject "Tiles!® Board Controller" */ = {
+		B76F079919CFD86600F63CBE /* Build configuration list for PBXProject "Tiles!® Board Controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4D2332D1991E2840048E49B /* Debug */,
-				A4D2332E1991E2840048E49B /* Release */,
+				B76F07D519CFD86700F63CBE /* Debug */,
+				B76F07D619CFD86700F63CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4D2332F1991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board Controller" */ = {
+		B76F07D719CFD86700F63CBE /* Build configuration list for PBXNativeTarget "Tiles!® Board Controller" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4D233301991E2840048E49B /* Debug */,
-				A4D233311991E2840048E49B /* Release */,
+				B76F07D819CFD86700F63CBE /* Debug */,
+				B76F07D919CFD86700F63CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		A4D233321991E2840048E49B /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */ = {
+		B76F07DA19CFD86700F63CBE /* Build configuration list for PBXNativeTarget "Tiles!® Board ControllerTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A4D233331991E2840048E49B /* Debug */,
-				A4D233341991E2840048E49B /* Release */,
+				B76F07DB19CFD86700F63CBE /* Debug */,
+				B76F07DC19CFD86700F63CBE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = A4D232FB1991E2830048E49B /* Project object */;
+	rootObject = B76F079619CFD86600F63CBE /* Project object */;
 }

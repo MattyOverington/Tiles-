@@ -20,7 +20,7 @@
 @property CGFloat y;
 @property CGPoint position;
 @property Piece* contents;
-@property Colour* tileColour;
+@property (nonatomic) Colour* tileColour;  // setTileColour
 
 -initWithPosition:(CGFloat)x :(CGFloat)y contents:(id)contents;
 -(void)replaceContentsWith:(id)contents;

@@ -17,7 +17,11 @@
     if (self.contents == nil) {
         self.isFree = YES;
     }
+    float num1 = arc4random_uniform(255)/255.0f;
+    float num2 = arc4random_uniform(255)/255.0f;
+    float num3 = arc4random_uniform(255)/255.0f;
     
+    self.tileColour = [Colour initWithRed:num1 green:num2 blue:num3];
     return self;
 }
 -(void)replaceContentsWith:(id)contents {
@@ -36,8 +40,5 @@
     self.isFree = YES;
 }
 
--(void)setTileColour:(Colour *)colour {
-    self.tileColour = colour;
-}
 
 @end

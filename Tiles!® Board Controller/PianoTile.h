@@ -35,12 +35,12 @@
 
 
 @interface PianoTile : NSObject
-
+-(void)scroll;
 
 
 @property id<PianoTileDelegate> delegate;
 -(void)touchAtSquare:(iPadTile *)touchedSquare;
-
+-(void)update:(CFTimeInterval)currentTime;
 /*
 Have a method that shifts all tiles to the row below, then generate new row with black tile on random column.
         we could maybe have an initial increased chance that a tile will be in the same column as the previous but that decays until there is significantly less chance, so we have lengths of 3-5 in the same column but not lengths of 10... thats just silly
