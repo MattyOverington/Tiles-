@@ -38,6 +38,8 @@
 		B76F080719CFD98900F63CBE /* Bluetooth.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080519CFD98900F63CBE /* Bluetooth.m */; };
 		B76F080A19CFD99D00F63CBE /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = B76F080919CFD99D00F63CBE /* Game.m */; };
 		B78E9E4F19ECB20E00B5963C /* OptionsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78E9E4E19ECB20E00B5963C /* OptionsViewController.m */; };
+		B78E9E5219ECB46D00B5963C /* StartingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78E9E5119ECB46D00B5963C /* StartingViewController.m */; };
+		B78E9E5519ECB49F00B5963C /* GameTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B78E9E5419ECB49F00B5963C /* GameTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +105,10 @@
 		B76F080919CFD99D00F63CBE /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		B78E9E4D19ECB20E00B5963C /* OptionsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OptionsViewController.h; sourceTree = "<group>"; };
 		B78E9E4E19ECB20E00B5963C /* OptionsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OptionsViewController.m; sourceTree = "<group>"; };
+		B78E9E5019ECB46D00B5963C /* StartingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StartingViewController.h; sourceTree = "<group>"; };
+		B78E9E5119ECB46D00B5963C /* StartingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StartingViewController.m; sourceTree = "<group>"; };
+		B78E9E5319ECB49F00B5963C /* GameTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameTableViewController.h; sourceTree = "<group>"; };
+		B78E9E5419ECB49F00B5963C /* GameTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -275,8 +281,12 @@
 			isa = PBXGroup;
 			children = (
 				B76F07B519CFD86600F63CBE /* Main.storyboard */,
+				B78E9E5319ECB49F00B5963C /* GameTableViewController.h */,
+				B78E9E5419ECB49F00B5963C /* GameTableViewController.m */,
 				B78E9E4D19ECB20E00B5963C /* OptionsViewController.h */,
 				B78E9E4E19ECB20E00B5963C /* OptionsViewController.m */,
+				B78E9E5019ECB46D00B5963C /* StartingViewController.h */,
+				B78E9E5119ECB46D00B5963C /* StartingViewController.m */,
 			);
 			name = "UI D:";
 			sourceTree = "<group>";
@@ -402,11 +412,13 @@
 				B76F07B419CFD86600F63CBE /* AppDelegate.m in Sources */,
 				B76F07E219CFD8AB00F63CBE /* iPadBoard.m in Sources */,
 				B76F07B019CFD86600F63CBE /* main.m in Sources */,
+				B78E9E5519ECB49F00B5963C /* GameTableViewController.m in Sources */,
 				B76F080719CFD98900F63CBE /* Bluetooth.m in Sources */,
 				B76F07ED19CFD91900F63CBE /* Colour.m in Sources */,
 				B76F07FC19CFD95100F63CBE /* Board.m in Sources */,
 				B76F080119CFD97700F63CBE /* PianoTile.m in Sources */,
 				B78E9E4F19ECB20E00B5963C /* OptionsViewController.m in Sources */,
+				B78E9E5219ECB46D00B5963C /* StartingViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
