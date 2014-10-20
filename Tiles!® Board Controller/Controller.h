@@ -15,5 +15,7 @@
 
 @property Bluetooth* bleManager;
 @property Game* game;
+@property BOOL isConnectedToBluno;
+@property Device* connectedDevice;
 
 @end

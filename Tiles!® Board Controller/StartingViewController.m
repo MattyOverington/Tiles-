@@ -46,4 +46,8 @@
     [self.controller.bleManager beginScanning];
 }
 
+- (IBAction)disconnectFromDevice:(id)sender {
+    [self.controller.bleManager disconnectFromDevice:self.controller.connectedDevice];
+}
+
 @end
