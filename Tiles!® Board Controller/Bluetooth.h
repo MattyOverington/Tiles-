@@ -45,6 +45,6 @@
 - (void)beginScanning;
 - (void)stopScanning;
 
--(BOOL) compareCBUUID:(CBUUID *) UUID1 UUID2:(CBUUID *)UUID2;
+- (BOOL) compareCBUUID:(CBUUID *) UUID1 UUID2:(CBUUID *)UUID2;
 
 @end

@@ -7,7 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Controller.h"
 
 @interface OptionsViewController : UIViewController
+
+@property Controller* controller;
 
 @end

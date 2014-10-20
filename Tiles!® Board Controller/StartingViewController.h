@@ -7,7 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Controller.h"
+#import "GameTableViewController.h"
 
 @interface StartingViewController : UIViewController
+
+@property Controller* controller;
+- (IBAction)connectToArduinoButton:(id)sender;
+
 
 @end

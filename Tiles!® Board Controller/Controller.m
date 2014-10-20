@@ -7,13 +7,13 @@
 //
 
 #import "Controller.h"
-#import "Bluetooth.h"
-#import "Game.h"
+
+#define BLUNO_SERVICE_UUID @"dfb0"
+#define BLUNO_CHARACTERISTIC_UUID @"dfb1"
 
 @interface Controller ()
 
-@property Bluetooth* bleManager;
-@property Game* game;
+
 
 @end
 
@@ -21,6 +21,19 @@
 
 @implementation Controller
 
+- (id)init {
+    self.bleManager = [[Bluetooth alloc] init];
+    
+    return self;
+    
+}
 
+- (void)didDiscoverDevice:(Device *)device {
+    [self.bleManager connectToDevice:device];
+}
+
+- (void)didConnectToDevice:(Device *)device {
+    
+}
 
 @end
