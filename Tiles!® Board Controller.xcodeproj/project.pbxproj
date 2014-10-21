@@ -136,6 +136,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A43D59F019EE2FB8009EF2A3 /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				B76F080219CFD98900F63CBE /* Device.h */,
+				B76F080319CFD98900F63CBE /* Device.m */,
+				B76F080419CFD98900F63CBE /* Bluetooth.h */,
+				B76F080519CFD98900F63CBE /* Bluetooth.m */,
+			);
+			name = Bluetooth;
+			sourceTree = "<group>";
+		};
 		B76F079519CFD86600F63CBE = {
 			isa = PBXGroup;
 			children = (
@@ -170,24 +181,15 @@
 		B76F07A919CFD86600F63CBE /* Tiles!® Board Controller */ = {
 			isa = PBXGroup;
 			children = (
-				B78E9E4C19ECB1CD00B5963C /* UI D: */,
 				B76F07BB19CFD86700F63CBE /* MyScene.h */,
 				B76F07BC19CFD86700F63CBE /* MyScene.m */,
-				B7FF9FBE19D27F8500B13C95 /* IPAD BOARD AND TILES */,
+				A43D59F019EE2FB8009EF2A3 /* Bluetooth */,
+				B78E9E4C19ECB1CD00B5963C /* UI  */,
+				B7FF9FBE19D27F8500B13C95 /* iPad Simulator */,
 				B76F07FD19CFD96600F63CBE /* Games */,
 				B76F07F619CFD94500F63CBE /* Board and tiles */,
 				B76F07EF19CFD92A00F63CBE /* Piece and player */,
 				B76F07E419CFD90D00F63CBE /* API */,
-				B76F080219CFD98900F63CBE /* Device.h */,
-				B76F080319CFD98900F63CBE /* Device.m */,
-				B76F080419CFD98900F63CBE /* Bluetooth.h */,
-				B76F080519CFD98900F63CBE /* Bluetooth.m */,
-				B76F07B219CFD86600F63CBE /* AppDelegate.h */,
-				B76F07B319CFD86600F63CBE /* AppDelegate.m */,
-				B76F07B819CFD86600F63CBE /* ViewController.h */,
-				B76F07B919CFD86700F63CBE /* ViewController.m */,
-				B76F07BE19CFD86700F63CBE /* Spaceship.png */,
-				B76F07C019CFD86700F63CBE /* Images.xcassets */,
 				B76F07AA19CFD86600F63CBE /* Supporting Files */,
 			);
 			path = "Tiles!® Board Controller";
@@ -196,6 +198,10 @@
 		B76F07AA19CFD86600F63CBE /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				B76F07C019CFD86700F63CBE /* Images.xcassets */,
+				B76F07B219CFD86600F63CBE /* AppDelegate.h */,
+				B76F07B319CFD86600F63CBE /* AppDelegate.m */,
+				B76F07BE19CFD86700F63CBE /* Spaceship.png */,
 				B76F07AB19CFD86600F63CBE /* Tiles!® Board Controller-Info.plist */,
 				B76F07AC19CFD86600F63CBE /* InfoPlist.strings */,
 				B76F07AF19CFD86600F63CBE /* main.m */,
@@ -277,9 +283,11 @@
 			name = "Piano tiles";
 			sourceTree = "<group>";
 		};
-		B78E9E4C19ECB1CD00B5963C /* UI D: */ = {
+		B78E9E4C19ECB1CD00B5963C /* UI  */ = {
 			isa = PBXGroup;
 			children = (
+				B76F07B819CFD86600F63CBE /* ViewController.h */,
+				B76F07B919CFD86700F63CBE /* ViewController.m */,
 				B76F07B519CFD86600F63CBE /* Main.storyboard */,
 				B78E9E5319ECB49F00B5963C /* GameTableViewController.h */,
 				B78E9E5419ECB49F00B5963C /* GameTableViewController.m */,
@@ -288,10 +296,10 @@
 				B78E9E5019ECB46D00B5963C /* StartingViewController.h */,
 				B78E9E5119ECB46D00B5963C /* StartingViewController.m */,
 			);
-			name = "UI D:";
+			name = "UI ";
 			sourceTree = "<group>";
 		};
-		B7FF9FBE19D27F8500B13C95 /* IPAD BOARD AND TILES */ = {
+		B7FF9FBE19D27F8500B13C95 /* iPad Simulator */ = {
 			isa = PBXGroup;
 			children = (
 				B76F07DD19CFD8AB00F63CBE /* iPadTile.h */,
@@ -299,7 +307,7 @@
 				B76F07DF19CFD8AB00F63CBE /* iPadBoard.h */,
 				B76F07E019CFD8AB00F63CBE /* iPadBoard.m */,
 			);
-			name = "IPAD BOARD AND TILES";
+			name = "iPad Simulator";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */

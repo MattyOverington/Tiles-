@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Controller.h"
+#import "OptionsViewController.h"
 
 @interface GameTableViewController : UITableViewController
+
+@property Controller* controller;
 
 @end

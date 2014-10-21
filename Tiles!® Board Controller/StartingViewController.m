@@ -10,6 +10,8 @@
 
 @interface StartingViewController ()
 
+
+
 @end
 
 @implementation StartingViewController
@@ -37,6 +39,14 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)connectToArduinoButton:(id)sender {
+    [self.controller.bleManager beginScanning];
+}
+
+- (IBAction)disconnectFromDevice:(id)sender {
+    [self.controller.bleManager disconnectFromDevice:self.controller.connectedDevice];
 }
 
 @end

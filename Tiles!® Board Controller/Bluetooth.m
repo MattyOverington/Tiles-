@@ -25,7 +25,7 @@
 
 @implementation Bluetooth
 
--(BOOL) compareCBUUID:(CBUUID *) UUID1 UUID2:(CBUUID *)UUID2
+- (BOOL) compareCBUUID:(CBUUID *) UUID1 UUID2:(CBUUID *)UUID2
 {
     char b1[16];
     char b2[16];
