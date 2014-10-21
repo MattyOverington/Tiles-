@@ -68,7 +68,7 @@
 -(NSArray *)newRow{
     NSMutableArray *row = [[NSMutableArray alloc]init];
     NSInteger blackSquare = arc4random_uniform(self.delegate.width);
-    for (NSInteger i = 0; i < self.delegate.width; i++) {
+    for (NSInteger i = 0; i < 8; i++) {
         iPadTile *tile = [[iPadTile alloc]init];
         if (i == blackSquare) {
             [tile assignContents:@"black"];
