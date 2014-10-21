@@ -7,20 +7,10 @@ the bwi is all around us
 THINGS TO DO 
 ----------------
 
-Matty
+TOP PRIORITY
+ - Port first game onto game class & arduino format
+ - Figure out reading data from arduino
+ - Possible Arduino Sketchs
+ - MOAR GAMES
 
-- Sort out arduino to get reading & sending of data optimal for our uses
-- Possiby code any arduino sketches
-- Link Controller for both sides of the project
-- Set up delegtion to enable connection for arduino
-- Add any helpful functions for framework
-- CODE FIRST GAME (to be decided upon)
-
-Copcutt
-
-- Get UI Done w/ ViewControllers and such
-- POSSIBLY Do art for UI (DEFINTELY NOT A PRIORITY, just unitl I get arduino sorted)
-- Add any helpful functions for framework
-- CODE FIRST GAME (to be decided upon)
-
-
+thank you for listening
