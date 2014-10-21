@@ -16,7 +16,7 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     OptionsViewController* destination = segue.destinationViewController;
-    destination.controller = self.controller;
+    //destination.controller = self.controller;
 }
 
 - (id)initWithStyle:(UITableViewStyle)style

@@ -9,9 +9,10 @@
 #import "PianoTile.h"
 
 @implementation PianoTile
-- (id)init
+- (id)initWithDelegate:(id)delegate
 {
     self = [super init];
+    self.delegate = delegate;
     for (NSInteger i = 0;i<self.delegate.height;i++) {
         
         
@@ -44,16 +45,16 @@
 
 -(void)scroll{
     NSArray* row = [self newRow];
-    for (NSInteger i = self.delegate.height; i > 0; i--) {
-        for (NSInteger j = 0; j < self.delegate.width; j++) {
+    for (NSInteger i = self.delegate.height-1; i >= 0; i--) {
+        for (NSInteger j = 0; j <= self.delegate.width-1; j++) {
             if (i==0) {
                 iPadTile *destination = [self.delegate tileWithX:j Y:i];
                 iPadTile *source = [row objectAtIndex:j];
-                [self.delegate assignContentsOfTile:destination withContents:source.contents];
+                [self.delegate replaceContentsOfTile:destination withContents:source.contents];
                 [self.delegate changeColorOfTile:destination toColour:source.tileColour];
             }
             else{
-                [self.delegate assignContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i-1].contents];
+                [self.delegate replaceContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i-1].contents];
                 [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[self.delegate tileWithX:j Y:i-1].tileColour];
             }
         }

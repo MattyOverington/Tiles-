@@ -33,7 +33,7 @@
 
 - (void)didConnectToDevice:(Device *)device {
     self.isConnectedToBluno = TRUE;
-    self.connectedDevice = Device;
+    self.connectedDevice = device;
 }
 
 @end

@@ -17,7 +17,8 @@
 @implementation StartingViewController
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    
+    GameTableViewController* destination = segue.destinationViewController;
+    destination.controller = self.controller;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil

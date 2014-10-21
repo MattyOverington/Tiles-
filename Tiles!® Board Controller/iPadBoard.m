@@ -36,7 +36,7 @@
             [[self.allGridSquares objectAtIndex:i] addObject:t];
         }
     }
-    self.game = [[PianoTile alloc]init];
+    self.game = [[PianoTile alloc]initWithDelegate:self];
     return self;
 }
 -(void)touchFromArduinoX:(NSInteger)x Y:(NSInteger)y{
@@ -46,11 +46,11 @@
 
 
 -(iPadTile *)tileWithX:(NSInteger)x Y:(NSInteger)y {
-    //assert(x > -1);
-    //assert(y > -1);
-    
-    //assert(y < [self.allGridSquares count]);
-    //assert(x < [self.allGridSquares count]);
+    assert(x > -1);
+    assert(y > -1);
+
+    assert(y < [self.allGridSquares count]);
+    assert(x < [self.allGridSquares count]);
     
     return [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
 };
@@ -85,7 +85,8 @@
     [tile assignContents:contents];
 }
 -(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents {
-    [tile replaceContentsWith:contents];
+    iPadTile*boardTile = [self tileWithPosition:tile.position];
+    [boardTile replaceContentsWith:contents];
 }
 
 
@@ -98,7 +99,8 @@
 
 
 - (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c{
-    [tile setTileColour:c];
+    iPadTile*boardTile = [self tileWithPosition:tile.position];
+    [boardTile setTileColour:c];
 
 }
 
