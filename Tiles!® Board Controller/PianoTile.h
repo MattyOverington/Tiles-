@@ -39,6 +39,7 @@
 
 
 @property id<PianoTileDelegate> delegate;
+-(id)initWithDelegate:(id)delegate;
 -(void)touchAtSquare:(iPadTile *)touchedSquare;
 -(void)update:(CFTimeInterval)currentTime;
 /*
