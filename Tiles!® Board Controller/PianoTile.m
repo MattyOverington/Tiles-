@@ -7,14 +7,19 @@
 //
 
 #import "PianoTile.h"
-
+@interface PianoTile()
+@property NSInteger tileColumnCount;
+@property NSInteger lastTilePosition;
+@end
 @implementation PianoTile
 - (id)initWithDelegate:(id)delegate
 {
     self = [super init];
+    self.tileColumnCount = 1;
+    self.lastTilePosition = 0;
     self.delegate = delegate;
     for (NSInteger i = 0;i<self.delegate.height;i++) {
-        
+        [self scroll];
         
         
     }
@@ -45,17 +50,17 @@
 
 -(void)scroll{
     NSArray* row = [self newRow];
-    for (NSInteger i = self.delegate.height-1; i >= 0; i--) {
+    for (NSInteger i = 0; i < self.delegate.height; i++) {
         for (NSInteger j = 0; j <= self.delegate.width-1; j++) {
-            if (i==0) {
+            if (i==self.delegate.height-1) {
                 iPadTile *destination = [self.delegate tileWithX:j Y:i];
                 iPadTile *source = [row objectAtIndex:j];
                 [self.delegate replaceContentsOfTile:destination withContents:source.contents];
                 [self.delegate changeColorOfTile:destination toColour:source.tileColour];
             }
             else{
-                [self.delegate replaceContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i-1].contents];
-                [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[self.delegate tileWithX:j Y:i-1].tileColour];
+                [self.delegate replaceContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i+1].contents];
+                [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[self.delegate tileWithX:j Y:i+1].tileColour];
             }
         }
     }
@@ -68,7 +73,7 @@
 
 -(NSArray *)newRow{
     NSMutableArray *row = [[NSMutableArray alloc]init];
-    NSInteger blackSquare = arc4random_uniform(self.delegate.width);
+    NSInteger blackSquare = [self random]; //arc4random_uniform(self.delegate.width);
     for (NSInteger i = 0; i < 8; i++) {
         iPadTile *tile = [[iPadTile alloc]init];
         if (i == blackSquare) {
@@ -86,9 +91,21 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    if ( fmod(currentTime, 5.0) < 0.03) {
+    if ( fmod(currentTime, 1.0) < 0.03) {
         [self scroll];
     }
 }
-
+-(NSInteger)random {
+    float row = (1.0f/((self.tileColumnCount+1^2)*1.0f))*100.0f;
+    float chance = arc4random_uniform(100);
+    if(chance < row) {
+        return self.lastTilePosition;
+        self.tileColumnCount +=1;
+    } else {
+        self.lastTilePosition =arc4random_uniform(self.delegate.width);
+        return self.lastTilePosition;
+        self.tileColumnCount = 1;
+    }
+    
+}
 @end
