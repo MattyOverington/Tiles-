@@ -7,8 +7,20 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tile.h"
+#import "Colour.h"
+
+@protocol GameDelegate <NSObject>
+
+-(void)changeColourOfTile:(Tile*)tile toColour:(Colour*)colour;
+
+@optional
+
+-(void)didBeginGame;
+-(void)gameDidEnd;
 
 
+@end
 
 
 @interface Game : NSObject
@@ -19,5 +31,7 @@
 -(void)runGame;
 -(void)nextTurn;
 -(void)perormActionsWithTouches:(NSArray*)touches;
+
+@property id<GameDelegate> delegate;
 
 @end

@@ -35,4 +35,10 @@
     self.connectedDevice = device;
 }
 
+- (void)changeColourOfTile:(Tile *)tile toColour:(Colour *)colour {
+    assert(self.isConnectedToBluno == TRUE);
+    
+    [self.bleManager sendDataWithColour:colour toDevice:self.connectedDevice];
+}
+
 @end

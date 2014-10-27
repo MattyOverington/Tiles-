@@ -11,7 +11,7 @@
 #import "Game.h"
 
 
-@interface Controller : NSObject <BluetoothDelegate>
+@interface Controller : NSObject <BluetoothDelegate, GameDelegate>
 
 @property Bluetooth* bleManager;
 @property Game* game;

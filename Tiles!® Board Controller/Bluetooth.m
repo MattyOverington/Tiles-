@@ -218,7 +218,7 @@
 	}
 }
 
-- (void)sendDataWithColour:(Colour *)colour toDevice:(Device *)device {
+- (void)sendDataWithColour:(Colour *)colour toDevice:(Device *)device withX:(NSInteger) x andY:(NSInteger)y{
     assert(colour);
 	assert(device);
 	assert(device.peripheral);
@@ -241,13 +241,15 @@
 		}
 		
         //Convert colour into data
-        u_int8_t Colours[] = {0x00, 0x00, 0x00};
+        u_int8_t Colours[] = {0x00, 0x00, 0x00, 0x00, 0x00};
         
         Colours[0] = (u_int8_t)colour.red;
         Colours[1] = (u_int8_t)colour.green;
         Colours[2] = (u_int8_t)colour.blue;
+        Colours[3] = (u_int8_t)x;
+        Colours[4] = (u_int8_t)y;
         
-        NSData* data = [[NSData alloc] initWithBytes:Colours length:3];
+        NSData* data = [[NSData alloc] initWithBytes:Colours length:5];
         
 		// Write the data
 		if (characteristic) {

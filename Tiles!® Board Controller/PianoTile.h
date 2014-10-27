@@ -23,7 +23,7 @@
 
 
 
-- (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c;
+-(void) changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c;
 -(void) changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c;
 -(void) changeColorOfTilesAtX1:(NSInteger)x1 X2:(NSInteger)x2 Y1:(NSInteger)y1 Y2:(NSInteger) y2 toColour:(Colour*) c;
 -(void) changeColorOfAllTiles:(Colour*) colour;
