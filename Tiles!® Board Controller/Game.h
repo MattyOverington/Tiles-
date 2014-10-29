@@ -13,7 +13,7 @@
 
 @protocol GameDelegate <NSObject>
 
-
+-(void)renderBoard;
 
 @optional
 

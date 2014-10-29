@@ -45,4 +45,8 @@
     }
 }
 
+-(void)renderBoard {
+    [self sendBoardData];
+}
+
 @end
