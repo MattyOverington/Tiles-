@@ -9,10 +9,11 @@
 #import <Foundation/Foundation.h>
 #import "Tile.h"
 #import "Colour.h"
+#import "Board.h"
 
 @protocol GameDelegate <NSObject>
 
--(void)changeColourOfTile:(Tile*)tile toColour:(Colour*)colour;
+
 
 @optional
 
@@ -26,6 +27,7 @@
 @interface Game : NSObject
 
 @property NSInteger turnNumber;
+@property (nonatomic) Board* gameBoard;
 
 -(BOOL)isLegalMove;
 -(void)runGame;

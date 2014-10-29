@@ -218,7 +218,7 @@
 	}
 }
 
-- (void)sendDataWithColour:(Colour *)colour toDevice:(Device *)device withX:(NSInteger) x andY:(NSInteger)y{
+- (void)sendDataWithColour:(Colour *)colour toDevice:(Device *)device withX:(NSInteger)x andY:(NSInteger)y{
     assert(colour);
 	assert(device);
 	assert(device.peripheral);
