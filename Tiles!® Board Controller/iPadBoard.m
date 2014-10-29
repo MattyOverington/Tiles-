@@ -51,7 +51,7 @@
 
     assert(y < [self.allGridSquares count]);
     assert(x < [self.allGridSquares count]);
-    
+    iPadTile* blah = [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
     return [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
 };
 
@@ -144,7 +144,7 @@
     
 }
 -(void)test {
-    [self.game scroll];
+   
 }
 
 @end

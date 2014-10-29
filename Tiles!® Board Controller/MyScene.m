@@ -67,15 +67,15 @@
 }
 
 -(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    /*for  (UITouch *touch in touches) {
+    for  (UITouch *touch in touches) {
         CGPoint location = [touch locationInNode:self];
         
-        NSInteger xlineNumber = MAX_GRID_X * location.x / (float) (CGRectGetWidth(self.frame)-8);
+        NSInteger xlineNumber = MAX_GRID_X * location.x / (float) (CGRectGetWidth(self.frame));
         NSInteger ylineNumber = MAX_GRID_Y * location.y / (float) CGRectGetHeight(self.frame);
         //run a method in the game which decides what to do
         [self.grid test];
         [self.grid touchFromArduinoX:xlineNumber Y:ylineNumber];
-    }*/
+    }
 }
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B767245319FDFE7600997DCC /* Piano Tiles.m in Sources */ = {isa = PBXBuildFile; fileRef = B767245219FDFE7600997DCC /* Piano Tiles.m */; };
 		B76F07A219CFD86600F63CBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A119CFD86600F63CBE /* Foundation.framework */; };
 		B76F07A419CFD86600F63CBE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A319CFD86600F63CBE /* CoreGraphics.framework */; };
 		B76F07A619CFD86600F63CBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B76F07A519CFD86600F63CBE /* UIKit.framework */; };
@@ -53,6 +54,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B767245119FDFE7600997DCC /* Piano Tiles.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Piano Tiles.h"; sourceTree = "<group>"; };
+		B767245219FDFE7600997DCC /* Piano Tiles.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Piano Tiles.m"; sourceTree = "<group>"; };
 		B76F079E19CFD86600F63CBE /* Tiles!® Board Controller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tiles!® Board Controller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B76F07A119CFD86600F63CBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B76F07A319CFD86600F63CBE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -238,6 +241,8 @@
 				B76F07EB19CFD91900F63CBE /* ColourValues.h */,
 				B76F07E919CFD91900F63CBE /* Controller.h */,
 				B76F07EA19CFD91900F63CBE /* Controller.m */,
+				B767245119FDFE7600997DCC /* Piano Tiles.h */,
+				B767245219FDFE7600997DCC /* Piano Tiles.m */,
 				B76F080819CFD99D00F63CBE /* Game.h */,
 				B76F080919CFD99D00F63CBE /* Game.m */,
 			);
@@ -427,6 +432,7 @@
 				B76F080119CFD97700F63CBE /* PianoTile.m in Sources */,
 				B78E9E4F19ECB20E00B5963C /* OptionsViewController.m in Sources */,
 				B78E9E5219ECB46D00B5963C /* StartingViewController.m in Sources */,
+				B767245319FDFE7600997DCC /* Piano Tiles.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

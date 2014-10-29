@@ -10,6 +10,7 @@
 @interface PianoTile()
 @property NSInteger tileColumnCount;
 @property NSInteger lastTilePosition;
+@property BOOL gameFinshed;
 @end
 @implementation PianoTile
 - (id)initWithDelegate:(id)delegate
@@ -18,7 +19,8 @@
     self.tileColumnCount = 1;
     self.lastTilePosition = 0;
     self.delegate = delegate;
-    for (NSInteger i = 0;i<self.delegate.height;i++) {
+    self.gameFinshed = NO;
+    for (NSInteger i = 0;i<self.delegate.height-2;i++) {
         [self scroll];
         
         
@@ -38,6 +40,7 @@
         
     }
     else if ([touchedSquare.contents isEqual:@"white"]) {
+        [self.delegate changeColorOfTile:touchedSquare toColour:[Colour initWithRed:255 green:90 blue:90]] ;
         [self gameFinish];
         
         
@@ -49,31 +52,37 @@
 
 
 -(void)scroll{
-    NSArray* row = [self newRow];
-    for (NSInteger i = 0; i < self.delegate.height; i++) {
-        for (NSInteger j = 0; j <= self.delegate.width-1; j++) {
-            if (i==self.delegate.height-1) {
-                iPadTile *destination = [self.delegate tileWithX:j Y:i];
-                iPadTile *source = [row objectAtIndex:j];
-                [self.delegate replaceContentsOfTile:destination withContents:source.contents];
-                [self.delegate changeColorOfTile:destination toColour:source.tileColour];
-            }
-            else{
-                [self.delegate replaceContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i+1].contents];
-                [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[self.delegate tileWithX:j Y:i+1].tileColour];
+    if(self.gameFinshed == NO) {
+        NSArray* row = [self newRow];
+        for (NSInteger i = 0; i < self.delegate.height; i++) {
+            for (NSInteger j = 0; j <= self.delegate.width-1; j++) {
+                if (i==0) {
+                    if ([[self.delegate tileWithX:j Y:i].contents  isEqual: @"black"]) {
+                        [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[Colour initWithRed:255 green:90 blue:90]];
+                        [self gameFinshed];
+                    }
+                }
+                if (i==self.delegate.height-1) {
+                    iPadTile *destination = [self.delegate tileWithX:j Y:i];
+                    iPadTile *source = [row objectAtIndex:j];
+                    [self.delegate replaceContentsOfTile:destination withContents:source.contents];
+                    [self.delegate changeColorOfTile:destination toColour:source.tileColour];
+                }                else{
+                    [self.delegate replaceContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i+1].contents];
+                    [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[self.delegate tileWithX:j Y:i+1].tileColour];
+                }
             }
         }
     }
 }
 
 -(void)gameFinish {
-    //end game, player died
-    //[self.delegate changeColorOfAllTiles:[Colour colourWithPreset:COLOUR_RED]];
+    self.gameFinshed = YES;
 }
 
 -(NSArray *)newRow{
     NSMutableArray *row = [[NSMutableArray alloc]init];
-    NSInteger blackSquare = [self random]; //arc4random_uniform(self.delegate.width);
+    NSInteger blackSquare = arc4random_uniform(self.delegate.width);
     for (NSInteger i = 0; i < 8; i++) {
         iPadTile *tile = [[iPadTile alloc]init];
         if (i == blackSquare) {
