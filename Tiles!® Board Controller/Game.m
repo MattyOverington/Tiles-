@@ -7,12 +7,10 @@
 //
 
 #import "Game.h"
-#import "Board.h"
 #import "Player.h"
 
 @interface Game ()
 
-@property (nonatomic) Board* gameBoard;
 @property Player* player1;
 @property Player* player2;
 

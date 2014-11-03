@@ -9,9 +9,10 @@
 #import <Foundation/Foundation.h>
 #import "Bluetooth.h"
 #import "Game.h"
+#import "Board.h"
 
 
-@interface Controller : NSObject <BluetoothDelegate>
+@interface Controller : NSObject <BluetoothDelegate, GameDelegate>
 
 @property Bluetooth* bleManager;
 @property Game* game;

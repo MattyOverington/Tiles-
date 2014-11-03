@@ -36,4 +36,17 @@
     self.connectedDevice = device;
 }
 
+- (void)sendBoardData {
+    for (int i = 0; i < 8; i ++) {
+        for (int j = 0; j < 8; j++) {
+            Tile* t = [[self.game.gameBoard.allTiles objectAtIndex:i] objectAtIndex:j];
+            [self.bleManager sendDataWithColour:t.tileColour toDevice:self.connectedDevice withX:i andY:j];
+        }
+    }
+}
+
+-(void)renderBoard {
+    [self sendBoardData];
+}
+
 @end

@@ -7,17 +7,33 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Tile.h"
+#import "Colour.h"
+#import "Board.h"
+
+@protocol GameDelegate <NSObject>
+
+-(void)renderBoard;
+
+@optional
+
+-(void)didBeginGame;
+-(void)gameDidEnd;
 
 
+@end
 
 
 @interface Game : NSObject
 
 @property NSInteger turnNumber;
+@property (nonatomic) Board* gameBoard;
 
 -(BOOL)isLegalMove;
 -(void)runGame;
 -(void)nextTurn;
 -(void)perormActionsWithTouches:(NSArray*)touches;
+
+@property id<GameDelegate> delegate;
 
 @end

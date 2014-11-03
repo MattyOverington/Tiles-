@@ -40,7 +40,7 @@
 
 - (void)sendMessage:(NSString *)message toDevice:(Device *)device;
 - (void)sendData:(NSData *)data toDevice:(Device *)device;
-- (void)sendDataWithColour:(Colour *)colour toDevice:(Device *)device;
+- (void)sendDataWithColour:(Colour *)colour toDevice:(Device *)device withX:(NSInteger)x andY:(NSInteger)y;
 
 - (void)beginScanning;
 - (void)stopScanning;
