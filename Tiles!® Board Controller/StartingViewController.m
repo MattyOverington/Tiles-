@@ -34,12 +34,8 @@
 {
     [super viewDidLoad];
 	self.controller = [[Controller alloc] init];
-}
-
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    
+    [NSTimer scheduledTimerWithTimeInterval:1.0 target:self selector:@selector(updateView) userInfo:nil repeats:YES];
 }
 
 - (IBAction)connectToArduinoButton:(id)sender {
@@ -48,6 +44,16 @@
 
 - (IBAction)disconnectFromDevice:(id)sender {
     [self.controller.bleManager disconnectFromDevice:self.controller.connectedDevice];
+}
+
+- (void) updateView {
+    if (self.controller.isConnectedToBluno) {
+        self.disconnectButton.enabled = YES;
+        self.connectButton.enabled = NO;
+    } else {
+        self.disconnectButton.enabled = NO;
+        self.connectButton.enabled = YES;
+    }
 }
 
 @end

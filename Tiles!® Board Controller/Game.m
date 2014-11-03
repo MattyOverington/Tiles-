@@ -14,6 +14,9 @@
 @property Player* player1;
 @property Player* player2;
 
+@property NSMutableArray* touchesArray;
+@property Touch* latestTouch;
+
 @end
 
 @implementation Game
@@ -21,7 +24,8 @@
 - (id)init {
     self = [super init];
     self.turnNumber = 0;
-    
+    self.touchesArray = [[NSMutableArray alloc] init];
+    self.latestTouch = [Touch alloc];
     return self;
 }
 
@@ -32,7 +36,6 @@
 
 
 - (BOOL)isLegalMove {
-   
     return FALSE;
 }
 
@@ -44,10 +47,13 @@
     
 }
 
-- (void)perormActionsWithTouches:(NSArray *)touches {
-    
-    
-    
+- (void)addTouch:(Touch*)t {
+    [self.touchesArray addObject:t];
+    self.latestTouch = t;
+}
+
+- (void)clearRecentTouches {
+    self.touchesArray = [NSMutableArray arrayWithArray:@[]];
 }
 
 

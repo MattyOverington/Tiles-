@@ -22,7 +22,7 @@
 
 - (id)init {
     self.bleManager = [[Bluetooth alloc] init];
-    
+    self.game = [[Game alloc] init];
     return self;
     
 }
@@ -47,6 +47,10 @@
 
 -(void)renderBoard {
     [self sendBoardData];
+}
+
+- (void)didReceiveData:(NSData *)message fromDevice:(Device *)device {
+    
 }
 
 @end

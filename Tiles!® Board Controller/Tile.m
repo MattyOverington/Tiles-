@@ -14,6 +14,7 @@
     self.x = x;
     self.y = y;
     self.contents = contents;
+    self.tileColour = [Colour colourWithPreset:COLOUR_WHITE];
     if (self.contents == nil) {
         self.isFree = YES;
     }

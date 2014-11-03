@@ -15,7 +15,7 @@
 @implementation GameTableViewController
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    OptionsViewController* destination = segue.destinationViewController;
+    //OptionsViewController* destination = segue.destinationViewController;
     //destination.controller = self.controller;
 }
 
@@ -60,10 +60,9 @@
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    static NSString *CellIdentifier = @"Cell";
+    static NSString *CellIdentifier = @"GameCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
     
     return cell;
 }
