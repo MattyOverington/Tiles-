@@ -85,22 +85,22 @@
     [tile assignContents:contents];
 }
 -(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents {
-    iPadTile*boardTile = [self tileWithPosition:tile.position];
-    [boardTile replaceContentsWith:contents];
+    
+    [[[self.allGridSquares objectAtIndex:tile.x] objectAtIndex:tile.y] replaceContentsWith:contents];
 }
 
 
 
 - (void)changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c{
-    iPadTile* t = [[self.allGridSquares objectAtIndex:x] objectAtIndex:y];
-    [t setTileColour: c];
+    
+    [[[self.allGridSquares objectAtIndex:x] objectAtIndex:y] setTileColour: c];
 }
 
 
 
 - (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c{
-    iPadTile*boardTile = [self tileWithPosition:tile.position];
-    [boardTile setTileColour:c];
+    
+    [[[self.allGridSquares objectAtIndex:tile.x] objectAtIndex:tile.y] setTileColour:c];
 
 }
 
@@ -142,6 +142,19 @@
 -(void)update:(CFTimeInterval)currentTime {
         [self.game update:currentTime];
     
+}
+-(void) crazyColours {
+
+        for (NSInteger i = 0; i < self.height; i++) {
+            for (NSInteger j = 0; j <= self.width-1; j++) {
+                [self changeColorOfTile:[self tileWithX:j Y:i] toColour:[Colour initWithRed:0 green:arc4random_uniform(255) blue:arc4random_uniform(255)]] ;
+
+            }
+        
+    
+    
+
+}
 }
 -(void)test {
    

@@ -29,7 +29,7 @@
 -(void) deleteContentsOfTile:(iPadTile*)tile;
 -(void) assignContentsOfTile:(iPadTile*)tile withContents:(id) contents;
 -(void) replaceContentsOfTile:(iPadTile*)tile withContents:(id) contents;
-
+-(void) crazyColours;
 
 - (void)changeColorOfTile:(iPadTile*)tile toColour:(Colour*) c;
 -(void) changeColorOfTileAtX:(NSInteger)x Y:(NSInteger)y toColour:(Colour*) c;

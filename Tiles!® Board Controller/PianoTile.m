@@ -10,6 +10,7 @@
 @interface PianoTile()
 @property NSInteger tileColumnCount;
 @property NSInteger lastTilePosition;
+@property NSInteger score;
 @property BOOL gameFinshed;
 @end
 @implementation PianoTile
@@ -35,6 +36,7 @@
         //register touched
         [self.delegate replaceContentsOfTile:touchedSquare withContents:@"touched"];
         [self.delegate changeColorOfTile:touchedSquare toColour:[Colour initWithRed:175 green:175 blue:175]] ; //<< idk whats wrong here, i think its cause we used {} rather than []... cbf changing now
+        self.score += 1;
         
         
         
@@ -56,10 +58,13 @@
         NSArray* row = [self newRow];
         for (NSInteger i = 0; i < self.delegate.height; i++) {
             for (NSInteger j = 0; j <= self.delegate.width-1; j++) {
+                
                 if (i==0) {
-                    if ([[self.delegate tileWithX:j Y:i].contents  isEqual: @"black"]) {
+                    iPadTile* lol = [self.delegate tileWithX:j Y:i];
+                    
+                    if ([lol.contents isEqual:@"black"]) {
                         [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[Colour initWithRed:255 green:90 blue:90]];
-                        [self gameFinshed];
+                        [self gameFinish];
                     }
                 }
                 if (i==self.delegate.height-1) {
@@ -70,9 +75,11 @@
                 }                else{
                     [self.delegate replaceContentsOfTile:[self.delegate tileWithX:j Y:i] withContents:[self.delegate tileWithX:j Y:i+1].contents];
                     [self.delegate changeColorOfTile:[self.delegate tileWithX:j Y:i] toColour:[self.delegate tileWithX:j Y:i+1].tileColour];
+                    
                 }
             }
         }
+        NSLog([NSString stringWithFormat:@"%d", self.score ]);
     }
 }
 
@@ -100,8 +107,11 @@
 }
 
 -(void)update:(CFTimeInterval)currentTime {
-    if ( fmod(currentTime, 1.0) < 0.03) {
+    if ( fmod(currentTime, 0.7) < 0.03) {
         [self scroll];
+        if (self.gameFinshed == YES) {
+            [self.delegate crazyColours];
+        }
     }
 }
 -(NSInteger)random {

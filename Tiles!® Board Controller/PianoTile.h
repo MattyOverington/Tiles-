@@ -15,7 +15,7 @@
 -(iPadTile*)tileWithTouch:(Touch *)touch;
 -(iPadTile*)tileWithX:(NSInteger)x Y:(NSInteger)y;
 
-
+-(void) crazyColours;
 -(void) moveContentsOfTile:(iPadTile*)firstTile toTile:(iPadTile*)secondTile;
 -(void) deleteContentsOfTile:(iPadTile*)tile;
 -(void) assignContentsOfTile:(iPadTile*)tile withContents:(id) contents;
