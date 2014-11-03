@@ -29,10 +29,7 @@
 @property NSInteger turnNumber;
 @property (nonatomic) Board* gameBoard;
 
--(BOOL)isLegalMove;
--(void)runGame;
--(void)nextTurn;
--(void)perormActionsWithTouches:(NSArray*)touches;
+-(void) addTouch:(Touch*)t;
 
 @property id<GameDelegate> delegate;
 

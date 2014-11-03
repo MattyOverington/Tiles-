@@ -16,7 +16,9 @@
 
 - (IBAction)connectToArduinoButton:(id)sender;
 - (IBAction)disconnectFromDevice:(id)sender;
+@property (weak, nonatomic) IBOutlet UILabel *connectionInfoLabel;
 @property (weak, nonatomic) IBOutlet UIButton *disconnectButton;
+@property (weak, nonatomic) IBOutlet UIButton *connectButton;
 
 
 @end
