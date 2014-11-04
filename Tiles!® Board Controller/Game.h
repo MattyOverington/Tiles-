@@ -30,6 +30,7 @@
 @property (nonatomic) Board* gameBoard;
 
 -(void) addTouch:(Touch*)t;
+- (void)runGame;
 
 @property id<GameDelegate> delegate;
 

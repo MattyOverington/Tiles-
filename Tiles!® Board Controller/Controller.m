@@ -34,6 +34,7 @@
 - (void)didConnectToDevice:(Device *)device {
     self.isConnectedToBluno = TRUE;
     self.connectedDevice = device;
+    [self.game runGame];
 }
 
 - (void)sendBoardData {
